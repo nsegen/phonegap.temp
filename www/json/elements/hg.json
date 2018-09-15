@@ -1,0 +1,26 @@
+{
+	"element" : "Hg",
+	"name": {
+		"ru": "Ртуть",
+		"en": "Mercury"
+	},
+	"group" : "2 B",
+	"period" : "6",
+	"atomMass" : "200.59",
+	"elnegativity" : "1,44",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["1", "2"],
+	"crystalStruct": {
+		"ru": "ромбоэдрическая",
+		"en": "rhombohedral"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery"
+	},
+	"tempMelting": "−38.8290 °C",
+	"tempBoiling": "356.73 °C"
+}

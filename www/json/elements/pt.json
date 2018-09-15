@@ -1,0 +1,30 @@
+{
+	"element" : "Pt",
+	"name": {
+		"ru": "Платина",
+		"en": "Platinum"
+	},
+	"group" : "8 B",
+	"period" : "6",
+	"atomMass" : "195.084",
+	"elnegativity" : "1,44",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d9 6s1",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "4", "5", "6"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1768.3 °C",
+	"tempBoiling": "3825 °C",
+	"discoverer": {
+		"ru": "Хосе Антонио де Мендоса",
+		"en": "José Antonio de Mendoza"
+	}
+}

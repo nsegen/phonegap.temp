@@ -1,0 +1,54 @@
+<div ui-content-for="title">
+  <span>Формулы</span>
+</div>
+
+
+<div class="scrollable">  
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break formulas-single-page">
+      <div class="row">
+        <div class="thumbnail">
+          <div class="formula">
+            <formula left="{{variable.symbol}}" right="{{formula}}"/>
+          </div>
+          <div class="formula formula-calc">
+            <span ng-bind-html="variable.symbol"></span> = 
+            <div ng-class="{'fraction' : isFraction()}">
+              <div class="top">
+                <div ng-repeat="variable in formula.top track by $index" >
+                  <input ng-model="calculateForm.numerator[$index].values" ng-type="number" value="{{listVariables[variable].value}}" class="form-control" ng-disabled="listVariables[variable].value" placeholder="{{variable | text}}">
+                  <select ng-model="calculateForm.numerator[$index].multipliers" ng-options="measure.designation | text | translate for measure in listVariables[variable].measure track by measure.multiplier" class="btn btn-default btn-block" ng-change="calculate()">
+                  </select>
+                  <span ng-if="$index!=formula.top.length-1"> × </span>
+                </div>
+              </div>
+              <div ng-if="isFraction()" class="bottom">
+                <div ng-repeat="variable in formula.bottom track by $index">
+                  <input ng-model="calculateForm.denominator[$index].values" ng-type="number" ng-value="{{listVariables[variable].value}}" class="form-control" ng-disabled="listVariables[variable].value" placeholder="{{variable | text}}">
+                  <select ng-options="measure.designation | text | translate for measure in listVariables[variable].measure track by measure.designation" ng-model="calculateForm.denominator[$index].multipliers" class="btn btn-default btn-block" ng-change="calculate()">
+                  </select>
+                  <span ng-if="$index != formula.bottom.length-1"> × </span>
+                </div>
+              </div>
+            </div>
+            <div ng-if="result">
+              <span class="formula-calc-result">={{result/resultMultiplier.multiplier}}</span>
+              <select class="btn btn-default" ng-options="measure.designation | text | translate for measure in listVariables[variable.symbol].measure track by measure.multiplier" ng-model="resultMultiplier">
+              </select>
+            </div>
+          </div>
+          <div class="btn btn-default btn-block" ng-click="calculate()" translate>Рассчитать</div>
+        </div>
+
+        <div class="thumbnail other-measures">
+          <ul class="list-group">
+            <li class="list-group-item"><span class="single-measure-label" ng-bind-html="formatSymbol(variable.symbol)"></span> - {{listVariables[variable.symbol].description | translate}}</li>
+            <li ng-repeat="var in formula.top" class="list-group-item"><span class="single-measure-label" ng-bind-html="formatSymbol(var)"></span> - {{listVariables[var].description | translate}}</li>
+            <li ng-repeat="var in formula.bottom" class="list-group-item"><span class="single-measure-label" ng-bind-html="formatSymbol(var)"></span> - {{listVariables[var].description | translate}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

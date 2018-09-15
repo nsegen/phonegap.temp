@@ -1,0 +1,31 @@
+{
+	"element" : "Ar",
+	"name": {
+		"ru": "Аргон",
+		"en": "Argon"
+	},
+	"group" : "8 A",
+	"period" : "3",
+	"atomMass" : "39.948",
+	"elnegativity" : "3,2",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Инертные газы",
+	"val" : ["0"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "-189,35 °C",
+	"tempBoiling": "-185,85 °C",
+	"discoverer": {
+		"ru": "Уильям Рамзай, Джон Стретт",
+		"en": "William Ramsay, John Strutt"
+	}
+
+}

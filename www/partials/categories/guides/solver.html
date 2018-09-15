@@ -1,0 +1,191 @@
+<div ng-include="'./partials/other/navbars/nav-single-guide.html'"></div>
+
+<div class="scrollable">  
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break guide-page">
+        <div class="row" style="margin-top:-10px">
+            <div class="guide-header col-md-12" style="background-image:url('./img/guides/problems.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name" id="anchor_top">
+                        <span class="icon icon-brain"></span> Решатель задач
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="thumbnail">
+                <div class>
+                    <div class="list-group">
+                      <a ng-click="gotoAnchor('1')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Что такое "Решатель задач"?
+                      </a>
+                      <a ng-click="gotoAnchor('2')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Пример решения простой задачи
+                      </a>
+                      <a ng-click="gotoAnchor('3')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Пример решения сложной задачи по уравнению реакции
+                      </a>
+                    </div>
+                </div>
+                <div class="guide-page-fulltext" id="anchor_1">
+                    <div class="guide-page-section">
+                        <h2>Что такое "Решатель задач"?</h2>
+                        <div>
+                          <p>Это функция, которая умеет решать химические задачи за тебя. Не просто находить ответ, а полностью решать задачи, подробно объясняя каждый шаг своего решения. От тебя лишь нужно записать "Дано" и "Найти", как в тетрадке, все остальное сделает "Решатель задач"!</p>
+                        </div>
+                    </div>
+                    <div class="guide-page-section" id="anchor_2">
+                        <h2>Пример решения простой задачи</h2>
+                        <div class="solver-guide-problem">
+                          <p>Заставим приложение решить такую задачу:</p>
+                          <div class="solver-guide-condition">
+                            Найдите массу углекислого газа CO<sub>2</sub>, собравшегося в комнате, объем которой равен 50 000 дм<sup>3</sup>.
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 1</div>
+                            <div class="guide-step-text">
+                              Приложение задает первый вопрос: "В условии задачи говорится о проходящей реакции?"<br>У нас просто есть углекислый газ, который собрался в комнате, но ни слова не сказано о том, что он начал с чем-то реагировать и стало образовываться какое-то новое вещество. Поэтому нажимаем <strong>"Нет"</strong>.
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem1/1.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 2</div>
+                            <div class="guide-step-text">
+                              Получаем следующий вопрос: "Известно ли вещество?"<br>Нажимаем <strong>"Да"</strong>, ведь в условии говорится о конкретном веществе - CO2.
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem1/2.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 3</div>
+                            <div class="guide-step-text">
+                              Решатель просит ввести формулу вещества. Вводим: "CO2". Именно "CO2", а не "co2" или "углекислый газ".<br>Нажимаем кнопку "Готово".
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem1/3.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 4</div>
+                            <div class="guide-step-text">
+                              Дальше решатель спрашивает, что дано в задаче.<br>Снова возвращаемся к условию и находим:
+                              <p class="guide-description">
+                              Найдите массу углекислого газа <span class="guide-solver-important">CO<sub>2</sub></span>, собравшегося в комнате, <span class="guide-solver-important">объем которой равен 50 000 дм<sup>3</sup></span></p>
+                              В условии задачи дан объем - 50 м<sup>3</sup>
+                              <p>Отлично, введем его в "Дано" решателя:</p>
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem1/4.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 5</div>
+                            <div class="guide-step-text">
+                              По условию задачи, нужно найти массу углекислого газа в комнате, поэтому в разделе "Найти" выбираем "Масса вещества".<br>Нажимаем "Готово".
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem1/5.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 6</div>
+                            <div class="guide-step-text">
+                              Перед нами готовое решение этой задачи в том виде, в котором его можно записать в тетрадь. Понятное объяснение любого шага можно получить, нажав кнопку "Подробнее". 
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem1/6.jpg">
+                            </div>
+                          </div>                          
+
+                        </div>
+                    </div>
+                    <div class="guide-page-section" id="anchor_3">
+                        <h2>Пример решения сложной задачи по уравнению реакции</h2>
+                          <div class="solver-guide-problem">
+                          <p>Заставим приложение решить задачу посложнее:</p>
+                          <div class="solver-guide-condition">
+                            Железная руда (III) с содержанием железа, равным 40%, горит в кислороде. В результате образуется 200 г оксида железа (III).<br>Найдите массу железной руды
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 1</div>
+                            <div class="guide-step-text">
+                              <p>Приложение задает первый вопрос: "В условии задачи говорится о проходящей реакции?"<br>По условию задачи, железная руда горит в кислороде, в результате чего образуется новое вещество - оксид железа.
+                              <br>В предыдущей задаче углекислый газ как был в самом начале, так в самом конце и остался, с ним ничего не произошло, новых веществ тоже не образовалось. Здесь случай другой: руда сгорела, и появилось новое вещество "оксид железа", которого сначала не было.
+                              <br>Ясное дело, что происходит какая-то реакция, поэтому нажимаем кнопку <strong>"Да"</strong>:</p>
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem2/1.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 2</div>
+                            <div class="guide-step-text">
+                              Решатель предлагает воспользоваться поиском реакций, чтобы не писать всю реакцию вручную и не расставлять коэффициенты самостоятельно.<br> "Железная руда горит в кислороде". Это значит, что железо вступает в реакцию с кислородм. В строку поиска это следует записать так: "Fe + O2".<br>Записываем и нажимаем "Найти".
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem2/2.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 3</div>
+                            <div class="guide-step-text">
+                              Решатель выводит список найденных реакций. Из этого списка надо выбрать всего лишь одну.<br>Нам подойдет реакция с Fe<sub>2</sub>O<sub>3</sub>. Выбираем ее.
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem2/3.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 4</div>
+                            <div class="guide-step-text">
+                              В "Дано" записываем: ω(Fe) = 40%; m(Fe<sub>2</sub>O<sub>3</sub>) = 200 г. Нажимаем кнопку "Готово".
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem2/4.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 5</div>
+                            <div class="guide-step-text">
+                              В "Найти" указываем: m<sub>руды</sub>(Fe). Нажимаем "Готово".
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem2/5.jpg">
+                            </div>
+                          </div>
+
+                          <div class="guide-step">
+                            <div class="guide-step-number">Шаг 6</div>
+                            <div class="guide-step-text">
+                              Перед нами полное решение этой задачи с уравнением реакции и пропорцией.
+                            </div>
+                            <div class="guide-step-img-wrap">
+                              <img class="guide-step-img" src="./img/guides/problems/problem2/6.jpg">
+                            </div>
+                          </div>                          
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>

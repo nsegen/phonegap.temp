@@ -1,0 +1,30 @@
+{
+	"element" : "N",
+	"name": {
+		"ru": "Азот",
+		"en": "Nitrogen"
+	},
+	"group" : "5 A",
+	"period" : "2",
+	"atomMass" : "14.0067",
+	"elnegativity" : "3,07",
+	"elconf" : "1s2 2s2 2p3",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"val" : ["-3", "2", "3", "4", "5"],
+	"crystalStruct": {
+		"ru": "кубическая",
+		"en": "cubic"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "-209,86 °C",
+	"tempBoiling": "-195,75 °C",
+	"discoverer": {
+		"ru": "Дэниэль Резерфорд",
+		"en": "Daniel Rutherford"
+	}
+
+}

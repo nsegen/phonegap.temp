@@ -1,0 +1,52 @@
+<div ng-include="'./partials/other/navbars/nav-single-guide.html'"></div>
+
+
+<div class="scrollable">  
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break guide-page">
+        <div class="row" style="margin-top:-10px">
+            <div class="guide-header col-md-12" style="background-image:url('./img/guides/react.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name" id="anchor_top">
+                        <span class="icon icon-react"></span> Решение реакций
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="thumbnail">
+                <div class>
+                    <div class="list-group">
+                      <a ng-click="gotoAnchor('1')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Что делает "решение реакций"?
+                      </a>
+                      <a ng-click="gotoAnchor('2')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Как вводить реакцию для поиска?
+                      </a>
+                    </div>
+                </div>
+                <div class="guide-page-fulltext" id="anchor_1">
+                    <div class="guide-page-section">
+                        <h2>Что делает "решение реакций"?</h2>
+                        <div>
+                          <p>Дана реакция, но ты не знаешь, что получится в итоге? Функция "Решение реакций" допишет реакцию и расставит коэффициенты. Кроме этого, функция может показать и условия, при которых это взаимодействие возможно, электронный баланс, степени окисления элементов.</p>
+                          <p>Просто введи часть реакции и нажми "Найти".</p>
+                        </div>
+                    </div>
+                    <div class="guide-page-section" id="anchor_2">
+                        <h2>Как вводить реакцию для поиска?</h2>
+                        <div>
+                          <p>Функция понимает формулы веществ (например, H2O, но не "вода"), знаки <strong>"+"</strong> и <strong>"="</strong>, пробелы не важны: их можно ставить, можно и не ставить.</p>
+                          <p>Вы можете ввести вещества из левой части реакции, разделив их знаком "+" (например: <strong>"H2 + O2"</strong>), тогда функция допишет правую часть.</p>
+                          <p>Можно ввести вещество из левой части реакции и вещество из правой части (например: <strong>"H2 = H2O"</strong>), в этом случае функция допишет недостающие вещества в левой и правой частях реакции.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>

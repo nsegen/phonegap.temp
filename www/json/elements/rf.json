@@ -1,0 +1,26 @@
+{
+	"element" : "Rf",
+	"name": {
+		"ru": "Резерфордий",
+		"en": "Rutherfordium"
+	},
+	"group" : "4 B",
+	"period" : "7",
+	"atomMass" : "[267]",
+	"elnegativity" : "",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f14 6d2 7s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["4"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"tempMelting": "2100 °C",
+	"tempBoiling": "5500 °C",
+	"discoverer": {
+		"ru": "Объединённый институт ядерных исследований",
+		"en": "Joint Institute for Nuclear Research"
+	}
+}

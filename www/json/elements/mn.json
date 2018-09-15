@@ -1,0 +1,31 @@
+{
+	"element" : "Mn",
+	"name": {
+		"ru": "Марганец",
+		"en": "Manganese"
+	},
+	"group" : "7 B",
+	"period" : "4",
+	"atomMass" : "54.938",
+	"elnegativity" : "1,60",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d5 4s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5", "7"],
+	"crystalStruct": {
+		"ru": "кубическая",
+		"en": "​body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery"
+	},
+	"tempMelting": "1246 °C",
+	"tempBoiling": "2061 °C",
+	"discoverer": {
+		"ru": "Карл Вильгельм Шееле, Юхан Готлиб Ган",
+		"en": "Carl Wilhelm Scheele, Johan Gottlieb Gahn"
+	}
+
+}

@@ -1,0 +1,30 @@
+{
+	"element" : "Co",
+	"name": {
+		"ru": "Кобальт",
+		"en": "Cobalt"
+	},
+	"group" : "8 B",
+	"period" : "4",
+	"atomMass" : "58.933",
+	"elnegativity" : "1,70",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d7 4s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "metallic gray"
+	},
+	"tempMelting": "1495 °C",
+	"tempBoiling": "2927 °C",
+	"discoverer": {
+		"ru": "Георг Бранд",
+		"en": "Georg Brandt"
+	}
+}

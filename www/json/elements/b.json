@@ -1,0 +1,31 @@
+{
+	"element" : "B",
+	"name": {
+		"ru": "Бор",
+		"en": "Boron"
+	},
+	"group" : "3 A",
+	"period" : "2",
+	"atomMass" : "10.811",
+	"elnegativity" : "2,01",
+	"elconf" : "1s2 2s2 2p1",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Полуметаллы",
+	"val" : ["-3", "3"],
+	"crystalStruct": {
+		"ru": "ромбоэдрическая",
+		"en": "rhombohedral"
+	},
+	"physColor": {
+		"ru": "тёмно-коричневый",
+		"en": "black-brown"
+	},
+	"tempMelting": "2075 °C",
+	"tempBoiling": "3865 °C",
+	"discoverer": {
+		"ru": "Жозеф Луи Гей-Люссака, Луи Жак Тенар",
+		"en": "Joseph Louis Gay-Lussac, Louis Jacques Thénard"
+	}
+
+}

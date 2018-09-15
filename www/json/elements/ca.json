@@ -1,0 +1,31 @@
+{
+	"element" : "Ca",
+	"name": {
+		"ru": "Кальций",
+		"en": "Calcium"
+	},
+	"group" : "2 A",
+	"period" : "4",
+	"atomMass" : "40.078",
+	"elnegativity" : "1,04",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 4s2",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щёлочноземельные металлы",
+	"val" : ["2"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированная",
+		"en": "​face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery gray"
+	},
+	"tempMelting": "838,85 °C",
+	"tempBoiling": "1483,85 °C",
+	"discoverer": {
+		"ru": "Гемфри Дэви",
+		"en": "Humphry Davy"
+	}
+
+}

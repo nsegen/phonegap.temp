@@ -1,0 +1,22 @@
+{
+	"element" : "Lv",
+	"name": {
+		"ru": "Ливерморий",
+		"en": "Livermorium"
+	},
+	"group" : "6 A",
+	"period" : "7",
+	"atomMass" : "[293]",
+	"elnegativity" : "",
+	"elconf" : "",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["0"],
+	"tempMelting": "364–507 °C",
+	"tempBoiling": "762–862 °C",
+	"discoverer": {
+		"ru": "Ливерморская национальная лаборатория, Объединённый институт ядерных исследований",
+		"en": "Lawrence Livermore National Laboratory, Joint Institute for Nuclear Research"
+	}
+}

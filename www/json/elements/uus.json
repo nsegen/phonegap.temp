@@ -1,0 +1,22 @@
+{
+	"element" : "(Uus)",
+	"name": {
+		"ru": "Унунсептий",
+		"en": "Ununseptium"
+	},
+	"group" : "7 A",
+	"period" : "7",
+	"atomMass" : "[294]",
+	"elnegativity" : "",
+	"elconf" : "",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Галогены",
+	"val" : ["0"],
+	"tempMelting": "300–500 °C",
+	"tempBoiling": "550 °C",
+	"discoverer": {
+		"ru": "Ливерморская национальная лаборатория, Объединённый институт ядерных исследований",
+		"en": "Lawrence Livermore National Laboratory, Joint Institute for Nuclear Research"
+	}
+}

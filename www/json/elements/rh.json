@@ -1,0 +1,30 @@
+{
+	"element" : "Rh",
+	"name": {
+		"ru": "Родий",
+		"en": "Rhodium"
+	},
+	"group" : "8 B",
+	"period" : "5",
+	"atomMass" : "102.905",
+	"elnegativity" : "1,45",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d8 5s1",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "6"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированная",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1964 °C",
+	"tempBoiling": "3695 °C",
+	"discoverer": {
+		"ru": "Уильям Хайд Волластон",
+		"en": "William Hyde Wollaston"
+	}
+}

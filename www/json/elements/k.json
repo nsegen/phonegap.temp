@@ -1,0 +1,30 @@
+{
+	"element" : "K",
+	"name": {
+		"ru": "Калий",
+		"en": "Potassium"
+	},
+	"group" : "1 A",
+	"period" : "4",
+	"atomMass" : "39.0983",
+	"elnegativity" : "0,91",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 4s1",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щелочные металлы",
+	"val" : ["1"],
+	"crystalStruct": {
+		"ru": "кубическая объёмно-центрированная",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery gray"
+	},
+	"tempMelting": "63,65 °C",
+	"tempBoiling": "773,85 °C",
+	"discoverer": {
+		"ru": "Гемфри Дэви",
+		"en": "Humphry Davy"
+	}
+}

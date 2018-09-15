@@ -1,0 +1,30 @@
+{
+	"element" : "Nd",
+	"name": {
+		"ru": "Неодим",
+		"en": "Neodymium"
+	},
+	"group" : "3 B",
+	"period" : "6",
+	"atomMass" : "144.242",
+	"elnegativity" : "1,07",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f4 5d0 6s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Лантаноиды",
+	"val" : ["2", "3", "4"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "double hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "светло-серый",
+		"en": "metallic"
+	},
+	"tempMelting": "1024 °C",
+	"tempBoiling": "3074 °C",
+	"discoverer": {
+		"ru": "Карл Ауэр фон Вельсбах",
+		"en": "Carl Auer von Welsbach"
+	}
+}

@@ -1,0 +1,49 @@
+<div ui-content-for="left">
+  <div back class="btn back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+<div ui-content-for="right"></div>
+<div ui-content-for="title">
+  <div translate>Органика</div> 
+</div>
+
+<div class="scrollable">
+  <div class="reactions-searchbar cribs-searchbar scrollable-header" ng-class="{'blur': status.error || status.loading}">
+    <div class="input-group">
+        <input ng-model="query" type="search" class="form-control" placeholder="Поиск...">
+        <span class="input-group-addon" id="basic-addon2"><i class="navbar-icon-search"></i></span>
+      </div>
+  </div>
+
+  <div class="scrollable-content scrollable-content-cribslist" ng-class="{'blur': status.error || status.loading}" style="padding-top: 0">
+    <div class="container-fluid section section-break cribs-page">
+      <div class="list-group">
+        <a ng-repeat="crib in cribs | filter:query" ng-click="openWikiLink(crib.link)" class="list-group-item">
+          <div class="row">
+            <div class="col-md-1 col-sm-1 col-xs-2">
+              <span class="crib-number">{{$index + 1}}</span>
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-10">
+              <span ng-bind="crib.title"></span>
+            </div>
+          </div>
+        </a>           
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cribs-list-preloader" ng-show="status.loading">
+    <i class="fa fa-spinner fa-spin"></i>
+  </div>
+
+  <div class="cribs-list-error" ng-show="status.error">
+    <div class="cribs-list-error-content">
+      <i class="fa fa-warning"></i>
+      <div class="cribs-list-error-content-text" translate>Нет соединения с интернетом</div>
+      <div ng-click="status.error = false" class="btn btn-primary">OK</div>
+    </div>
+  </div>
+
+</div>

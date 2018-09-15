@@ -1,0 +1,30 @@
+{
+	"element" : "Am",
+	"name": {
+		"ru": "Америций",
+		"en": "Americium"
+	},
+	"group" : "3 B",
+	"period" : "7",
+	"atomMass" : "[243]",
+	"elnegativity" : "1,20 ",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f7 6d0 7s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Актиноиды",
+	"val" : ["2","3", "4", "5", "6"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "double hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1176 °C",
+	"tempBoiling": "2607 °C",
+	"discoverer": {
+		"ru": "Гленн Теодор Сиборг",
+		"en": "Glenn Theodore Seaborg"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"element" : "I",
+	"name": {
+		"ru": "Иод",
+		"en": "Iodine"
+	},
+	"group" : "7 A",
+	"period" : "5",
+	"atomMass" : "126.904",
+	"elnegativity" : "2,21",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p5",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Галогены",
+	"val" : ["-1", "1", "3", "5", "7"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "orthorhombic"
+	},
+	"physColor": {
+		"ru": "тёмно-серый, фиолетовый (газ)",
+		"en": "lustrous metallic gray, violet as a gas"
+	},
+	"tempMelting": "113.7 °C",
+	"tempBoiling": "184.3 °C",
+	"discoverer": {
+		"ru": "Бернар Куртуа",
+		"en": "Bernard Courtois"
+	}
+}

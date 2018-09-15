@@ -1,0 +1,30 @@
+{
+	"element" : "Br",
+	"name": {
+		"ru": "Бром",
+		"en": "Bromine"
+	},
+	"group" : "7 A",
+	"period" : "4",
+	"atomMass" : "79.904",
+	"elnegativity" : "2,74",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p5",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Галогены",
+	"val" : ["-1", "1", "3", "5", "7"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "orthorhombic"
+	},
+	"physColor": {
+		"ru": "красно-бурый",
+		"en": "red-brown"
+	},
+	"tempMelting": "−7.2 °C",
+	"tempBoiling": "58.8 °C",
+	"discoverer": {
+		"ru": "Антуан Жером Балар",
+		"en": "Antoine-Jérôme Balard"
+	}
+}

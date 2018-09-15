@@ -1,0 +1,513 @@
+<div ui-content-for="title">
+  <span>Решение задач</span>
+</div>
+
+<div ui-content-for="left">
+  <div ng-if="solver.path[solver.path.length - 1] == 'reactQuestion'" ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+    <i class="navbar-icon-menu"></i>
+  </div>
+
+  <div ng-if="solver.path[solver.path.length - 1] != 'reactQuestion'" ng-click="solver.back()" class="btn back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+
+<div ui-content-for="right">
+  <div ng-if="activitiesShow.reactQuestion" ui-sref="solverGuide" class="btn">
+    <i class="navbar-icon-question"></i>
+  </div>
+</div>
+
+
+<div class="scrollable">  
+  
+  <div class="scrollable-content" ng-show="activitiesShow.reactQuestion">
+
+    <div class="container-fluid section section-break">
+      <div class="thumbnail problems-question-field">
+        <div class="problems-text">
+          <p><b>В условии задачи говорится о проходящей реакции?</b></p>
+          <p>"Да", если одно вещество получается из другого, что-то к чему-то добавляют, вещество горит, окисляется и т.д.</p>
+          <div ui-turn-on="isReactModal" class="btn btn-default">Примеры</div>
+        </div>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div ng-click="solver.isSimple=false; deleteFromVarList('M_v'); showActivity('reactFinding')" class="btn btn-default yes-btn">Да</div>
+          <div ng-click="solver.isSimple=true; addToVarList('M_v'); showActivity('simpleProblemSubstance')" class="btn btn-default no-btn">Нет</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrollable-content" ng-show="activitiesShow.simpleProblemSubstance">
+    <div class="container-fluid section section-break">
+      <div class="thumbnail problems-question-field">
+        <div class="problems-text">
+          <p><b>Известно ли вещество?</b></p>
+          <p>"Да", если в задаче говорится: "найдите массу натрия", "объём NaOH равен 40 литров", "железная руда", а не: "объём вещества", "масса вещества"...</p>
+          <div ui-turn-on="isSubstModal" class="btn btn-default">Примеры</div>
+        </div>
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div ng-click="deleteFromVarList('M_v'); showActivity('simpleProblemSubstanceEnter')" class="btn btn-default yes-btn">Да</div>
+          <div ng-click="addToVarList('M_v'); showActivity('simpleProblemGiven')" class="btn btn-default no-btn">Нет</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrollable-content" ng-show="activitiesShow.simpleProblemSubstanceEnter">
+    <div class="container-fluid section section-break">
+      <div class="thumbnail problems-question-field">
+        <div class="problems-text">
+          <p><b>Введите формулу вещества</b></p>
+          <p>
+            Правильная запись: <span class="alert text-success" style="padding: 3px">NaCl</span>
+            <br>
+            Неправильная запись: <span class="alert text-danger" style="padding: 3px">nacl</span>, <span class="alert text-danger" style="padding: 3px">хлорид натрия</span>
+          </p>
+          <div class="input-group">
+            <input type="text" id="singleSubstanceInput" ng-model="substFormula" class="form-control" placeholder="Например: Cu(OH)2">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" ng-click="checkSubstFormula()" type="button"><i class="fa fa-check"></i> ОК</button>
+              <!-- попробовать посчитать молярную массу -->
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-danger" ng-show="substFormulaErrorShow"><i class="fa fa-exclamation-triangle"></i> {{substFormulaErrorText}}</div>
+    </div>
+  </div>
+
+  <div class="scrollable-content" ng-show="activitiesShow.simpleProblemGiven">
+    <div class="container-fluid section section-break">
+      <div class="problems-help-text">
+        <div class="help-text">Запиши, что дано по условию задачи</div>
+        <div class="more-help">Смелее, все как в тетрадке</div>
+      </div>
+      <div class="problems-given thumbnail row">
+        <div class="left-field col-xs-10 col-sm-10 col-md-10">
+          <div class="given-field">
+            <h3 class="given-header header">Дано:</h3>
+            <div class="given-body">
+
+              <div>
+                <div ng-repeat="x in givenFields">
+                  <span ng-click="deleteGivenString(givenFields.indexOf(x))" class="delete-string-bt"><i class="fa fa-times-circle"></i></span>
+                  <span class="given-string-symbol" ng-bind-html="x.symbol"></span> 
+                  <span ng-if="substFormula != undefined && substFormula != ''" class="given-string-substance">({{substFormula}})</span>
+                  <span ng-if="!solver.isSimple" class="given-string-substance">({{x.subst}})</span>
+                  <span> = </span>
+                  <span>{{x.value}}</span>
+                  <span class="given-string-measure">{{x.measure}}</span>
+                </div>
+              </div>
+
+
+              <select ng-show="problemsVarSelectShow" class="btn btn-default btn-block" name="givenOption" id="givenOption" ng-options="option.name.ru for option in variablesList track by option.var" ng-model="givenVariable" ng-change="setSelectedVariable(givenVariable.var)">
+                
+              </select>
+
+              <div ng-if="givenVariable.var != 'select'" ng-show="givenFillingStringShow" class="given-filling-string">
+                <div ng-click="deleteGivenField()" class="problems-given-inline delete-string-bt">
+                  <i class="fa fa-times-circle"></i>
+                </div>
+                <div class="problems-given-inline">
+                  <span class="variable-symbol" ng-bind-html="givenVariable.symbol.ru"></span>
+                  <span ng-if="substFormula != undefined && substFormula != ''" class="given-string-substance" class="given-string-substance">({{substFormula}})</span>
+                  <div ng-if="!solver.isSimple" class="problems-given-inline">
+                    <select class="btn btn-default btn-block" name="variableSubstance" id="variableSubstance" ng-options="subst.subst for subst in reactSearch.reaction.object" ng-model="selectedSubst" ng-change="writeSubstance(selectedSubst)">
+                      <option ng-selected="true" value="">Выбрать</option>
+                      
+                    </select>     
+                  </div>
+                  <span> = </span>
+                </div>
+                <div class="problems-given-inline">
+                  <input type="number" id="variableValue" ng-model="variableValue" value="" class="form-control" style="width: 70px" placeholder="Число">
+                </div>
+
+                <div class="problems-given-inline" ng-if="givenVariable.measures.ru[0] != ''">
+                  <select class="btn btn-default btn-block" name="variableMeasure" id="variableMeasure" ng-options="measure for measure in selectedVariable.measures.ru" ng-model="selectedVariableModel" ng-change="writeMeasure(selectedVariableModel)">
+                  
+                  </select>
+                  <!--
+                  Работает, но не сексуально выглядит
+                    <select class="btn btn-default" name="variableMeasure" id="variableMeasure" ng-model="selectedVariable.measures.ru[0]" ng-change="startFillingVariable()" ng-change="writeMeasure()">
+                      <option value="{{x}}" selected ng-repeat="x in selectedVariable.measures.ru" ng-if="selectedVariable.measures.ru == 0">{{x}}</option>
+                      <option value="{{x}}" ng-repeat="x in selectedVariable.measures.ru" ng-if="selectedVariable.measures.ru != 0">{{x}}</option>
+                    </select>
+                  -->
+                </div>
+                <div class="problems-given-inline">
+                  <div ng-click="checkGivenString()" class="btn btn-primary">
+                    <i class="fa fa-check"></i> OK
+                  </div>
+                </div>
+              </div>
+              <div ng-show="givenErrorShow" class="alert alert-danger problems-given-error"><i class="fa fa-exclamation-triangle"></i> <span ng-bind-html="givenError"></span></div>
+
+              <!-- муляж кнопки -->
+              <div ng-show="givenCompleteBtDisabledShow" class="btn btn-primary btn-block disabled problems-complete-btn"><i class="fa fa-check"></i> Готово</div>
+              <!-- настоящая кнопка -->
+              <div ng-click="showActivity('simpleProblemFind')" ng-show="givenCompleteBtEnabledShow" class="btn btn-primary btn-block problems-complete-btn"><i class="fa fa-check"></i> Готово</div>
+
+            </div>
+          </div>
+          <!--
+          <div class="find-field problems-blocked">
+            <h3 class="find-header header">Найти:</h3>
+          </div>
+          -->
+        </div>
+        <div class="right-field col-xs-2 col-sm-2 col-md-2">
+          <h3 class="problems-blocked-text solution-header header">Решение:</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scrollable-content" ng-show="activitiesShow.simpleProblemFind">
+    <div class="container-fluid section section-break">
+      <div class="problems-help-text">
+        <div class="help-text">Запиши, что надо найти</div>
+        <div class="more-help">Смелее, все как в тетрадке</div>
+      </div>
+      <div class="problems-given thumbnail row">
+        <div class="left-field col-xs-10 col-sm-10 col-md-10">
+          <div class="given-field">
+            <div style="text-align: left; padding: 10px 15px; color: #B7B7B7">
+              <span ng-bind-html="givenFields[givenFields.length - 1].symbol"></span>
+              <span ng-if="solver.isSimple && substFormula != undefined && substFormula != ''">({{substFormula}})</span>
+              <span ng-if="!solver.isSimple">({{givenFields[givenFields.length - 1].subst}})</span>
+              <span> = </span>
+              <span>{{givenFields[givenFields.length - 1].value}}</span>
+              <span>{{givenFields[givenFields.length - 1].measure}}</span>
+            </div>
+            <h3 class="find-header header">Найти:</h3>
+            <div class="given-body">
+              <div>
+                <div ng-repeat="x in findFields">
+                  <span ng-click="deleteFindString(findFields.indexOf(x))" class="delete-string-bt"><i class="fa fa-times-circle"></i></span>
+                  <span class="given-string-symbol" ng-bind-html="x.symbol"></span> 
+                  <span ng-if="substFormula != undefined && substFormula != ''" class="given-string-substance">({{substFormula}})</span>
+                  <span ng-if="!solver.isSimple">({{x.subst}})</span>
+                  <span> - ?</span>
+                </div>
+              </div>
+
+
+              <select ng-show="problemsVarFindSelectShow" class="btn btn-default btn-block" name="findOption" id="findOption" ng-options="option.name.ru for option in variablesList track by option.var" ng-model="findVariable" ng-change="setSelectedFindVariable(findVariable.var)">
+              
+              </select>
+
+
+
+
+
+              <div ng-show="findFillingStringShow" ng-if="!solver.isSimple" class="given-filling-string">
+                <div ng-click="deleteFindField()" class="problems-given-inline delete-string-bt">
+                  <i class="fa fa-times-circle"></i>
+                </div>
+                <div class="problems-given-inline">
+                  <span class="variable-symbol" ng-bind-html="findVariable.symbol.ru"></span>
+                  <div class="problems-given-inline">
+                    <select class="btn btn-default btn-block" name="variableFindSubstance" id="variableFindSubstance" ng-options="subst.subst for subst in reactSearch.reaction.object" ng-model="selectedFindSubst" ng-change="writeFindSubstance(selectedFindSubst)">
+                      <option ng-selected="true" value="">Выбрать</option>
+                      
+                    </select>     
+                  </div>
+                  <span> - ?</span>
+                </div>
+
+                <div class="problems-given-inline">
+                  <div ng-click="checkFindString(selectedFindSubst)" class="btn btn-primary">
+                    <i class="fa fa-check"></i> OK
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div ng-show="findErrorShow" class="alert alert-danger problems-given-error"><i class="fa fa-exclamation-triangle"></i> <span ng-bind-html="findError"></span></div>
+
+              <!-- муляж кнопки -->
+              <div ng-show="findCompleteBtDisabledShow" class="btn btn-primary btn-block disabled problems-complete-btn"><i class="fa fa-check"></i> Готово</div>
+              <!-- настоящая кнопка -->
+              <div ng-click="solveProblem()" ng-show="findCompleteBtEnabledShow" class="btn btn-primary btn-block problems-complete-btn"><i class="fa fa-check"></i> Готово</div>
+
+            </div>
+          </div>
+          <!--
+          <div class="find-field problems-blocked">
+            <h3 class="find-header header">Найти:</h3>
+          </div>
+          -->
+        </div>
+        <div class="right-field col-xs-2 col-sm-2 col-md-2">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="scrollable-content problemSolutionPage" ng-show="activitiesShow.simpleProblemSolution">
+    <div class="container-fluid section section-break">
+      <div ng-show="solutionWaitingShow" class="solution-waiting">
+        <i class="fa fa-spin fa-spinner"></i>
+      </div>
+      <div ng-show="readySolutionShow" class="ready-solution">
+
+        <div class="convert-measure" ng-if="convertedMeasures.length > 0">
+          <div ng-repeat="x in convertedMeasures">
+            <span ng-bind-html="x.symbol"></span>
+            <span ng-if="solver.isSimple && substFormula != undefined">
+              (<span ng-bind-html="substFormula"></span>)
+            </span>
+            <span ng-if="!solver.isSimple && x.subst != undefined">
+              (<span ng-bind-html="x.subst"></span>)
+            </span>
+            <span> = </span>
+            <span></span>
+            <span>{{x.value}}</span>
+            <span> {{x.measure}}</span>
+            <span> = </span>
+            <span>{{x.value2}}</span>
+            <span>{{x.measure2}}</span>
+          </div>
+        </div>
+
+
+        <!-- Задачи без реакции -->
+        <div ng-if="solver.isSimple" ng-repeat="answer in answers" class="all-answers-block">
+          <div ng-repeat="step in answer" class="solution-step-cell">
+            <div class="solution-step" ng-hide="stepContentHide[answers.indexOf(answer)][answer.indexOf(step)]" ng-click="showStepInDetail(answers.indexOf(answer), answer.indexOf(step))">
+              <div ng-bind-html="step.record.ru"></div>
+              <div class="btn btn-solver-more">Подробнее</div>
+            </div>
+            <div class="solution-step step-opened" ng-show="stepContentInDetailShow[answers.indexOf(answer)][answer.indexOf(step)]" ng-bind-html="step.explanation.ru" ng-click="showStep(answers.indexOf(answer), answer.indexOf(step))"></div>
+          </div>     
+        </div>
+
+
+
+        <!-- Задачи с реакцией -->
+        <div ng-if="!solver.isSimple"    class="all-answers-block">
+          <div    >
+
+            <div class="solution-step solution-reaction">
+              <!-- Уравнение реакции -->
+              <table class="reaction-table">
+                <!-- верхние надписи (x моль, 2 моль) -->
+                <tr>
+                  <td ng-repeat="remark in reactRemarks.top track by $index">
+                    <span ng-if="remark != ''" class="reaction-remark">{{remark}} моль</span>
+                  </td>
+                </tr>
+
+                <!-- сама реакция -->
+                <tr class="reaction-row">
+                  <td ng-repeat="subst in reactSearch.reaction.object track by $index">
+                    <span ng-if="subst.coef != 1" class="reaction-coef">{{subst.coef}}</span>
+                    <span class="reaction-subst">{{subst.subst}}</span>
+                    <span class="reaction-sign" ng-if="subst.side == reactSearch.reaction.object[$index + 1].side && reactSearch.reaction.object.indexOf(subst) < reactSearch.reaction.object.length - 1"> + </span>
+                    <span class="reaction-sign" ng-if="subst.side != reactSearch.reaction.object[$index + 1].side && reactSearch.reaction.object.indexOf(subst) < reactSearch.reaction.object.length - 1"> = </span>
+                  </td>
+                </tr>
+
+                <!-- нижние надписи (3 моль, 2 моль) -->
+                <tr>
+                  <td ng-repeat="remark in reactRemarks.bottom track by $index">
+                    <span ng-if="remark != ''" class="reaction-remark">{{remark}} моль</span>
+                  </td>
+                </tr>
+              </table> 
+            </div>           
+
+
+            <!-- Шаги решения задачи-->
+            <div ng-repeat="step in answerSol track by $index" class="solution-step-cell">
+              <div class="solution-step" ng-hide="stepContentHide[answerSol.indexOf(step)]" ng-click="showStepInDetail(answerSol.indexOf(step))">
+                <div ng-bind-html="step.record.ru | toTrusted"></div>
+                <div class="btn btn-solver-more">Подробнее</div>
+              </div>
+              <div class="solution-step step-opened" ng-show="stepContentInDetailShow[answerSol.indexOf(step)]" ng-click="showStep(answerSol.indexOf(step))" ng-bind-html="step.explanation.ru | toTrusted"></div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div ng-show="gotoProShow" class="goto-pro-block">
+          <div class="to-see-all-text" class="">Чтобы увидеть все шаги, нужно...</div>
+          <div class="teeth-top"></div>
+          <div ng-if="!config.isParentsDesc" class="goto-pro-block-content">
+            <div ui-sref="goto-pro" class="btn btn-primary goto-pro-bt">Перейти к Pro-версии</div>
+            <div ui-sref="goto-pro" class="more-about-pro-bt">Подробнее о преимуществах Pro-версии</div>
+          </div>
+          <div ng-if="config.isParentsDesc" class="goto-pro-block-content">
+            <div ui-sref="goto-pro-parents" class="btn btn-primary goto-pro-bt">Перейти к Pro-версии</div>
+            <div ui-sref="goto-pro-parents" class="more-about-pro-bt">Подробнее о преимуществах Pro-версии</div>
+          </div>
+          <div class="teeth-bottom"></div>
+        </div>
+
+        <div class="short-answer" ng-if="shortAnswers.length > 0">
+          <strong>Ответ: </strong>
+          <span ng-repeat="shortAnswer in shortAnswers">
+            <span ng-bind-html="shortAnswer.symbol.ru"></span>
+            <span ng-if="solver.isSimple && substFormula != undefined">({{substFormula}})</span>
+            <span ng-if="!solver.isSimple && shortAnswer.subst != undefined">({{shortAnswer.subst}})</span>
+            <span> = {{shortAnswer.value}} </span>
+            <span ng-bind-html="shortAnswer.measures.ru[0]"></span>
+            <span ng-if="shortAnswers.indexOf(shortAnswer) < shortAnswers.length - 1">, </span>
+          </span>
+        </div>
+
+      </div>
+      <div ng-show="solutionErrorsShow" class="solution-error">
+        <div class="solution-error-single" ng-repeat="error in solutionErrors">
+          <div class="solution-error-header">
+            <strong>
+              <i class="fa fa-exclamation-triangle"></i> <span ng-bind-html="error.header.ru"></span>
+            </strong>
+          </div>
+          <div bind-html-compile="error.description.ru"></div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+
+
+  <!--
+    ЗАДАЧИ ПО УРАВНЕНИЮ РЕАКЦИИ
+  -->
+  <div class="scrollable-content reactFindingPage" ng-show="activitiesShow.reactFinding">
+
+    <div class="reactions-searchbar">
+      <div class="input-group reactions-search">
+        <input id="reaction-input" type="text" class="form-control" placeholder="{{'Например: ' + reactSearch.reaction.example}}">
+        <span class="input-group-btn">
+          <button ng-click="reactSearch.search()" class="btn btn-primary" type="button"><i class="fa fa-search"></i> Найти</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="container-fluid section section-break">
+      <div ng-show="reactionsExamplesShow" class="reactions-examples">
+        <div class="reactions-examples-field">
+          <span class="reactions-more-text">Другие примеры:</span>
+          <span ng-repeat="example in examples">
+            <span ng-click="searchReaction(example)" class="reactions-example label label-default">{{example}}</span>
+          </span>
+        </div>
+        <div ng-hide="reactionsMoreBtHide" class="reactions-more-btn"><span ng-click="addExamples('reactions', 3)">Ещё</span></div>
+      </div>
+
+      <div ng-show="reactSearch.loading.show" class="reactions-search-field">
+        <i class="fa fa-spinner fa-spin"></i>
+      </div>
+
+      <div ng-show="reactSearch.error.show" class="reactions-error-field alert alert-danger" role="alert">
+        {{reactSearch.error.text}}
+      </div>
+
+      <div ng-show="reactSearch.captcha.show" class="reactions-captcha-field">
+        <img src="{{'http://nigma.ru/captcha.php?key=' + reactSearch.captcha.key}}">
+        <input placeholder="Код с картинки..." class="form-control" id="captcha-text" name="captcha" type="text">
+        <div ng-click="reactSearch.captcha.send()" class="btn btn-primary">Отправить</div>
+      </div>
+
+
+      <div ng-show="reactSearch.hintField.show" class="thumbnail solver-hint">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-1 icon-block">
+            <div class="fa fa-long-arrow-up"></div>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-11">
+            <p>Воспользуйтесь поиском, чтобы найти нужную вам реакцию.</p>
+            <p>Например, если в условии задачи сказано: "Водород реагирует с кислородом", то надо ввести: <span class="label label-default">H2 + O2</span></p>
+            <div ui-turn-on="reactExamplesModal" class="solver-more-examples">
+              <span>Другие примеры</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div ng-show="reactSearch.list.show" class="reactions-list">
+        <div>
+          Выберите из списка одну реакцию:
+        </div>
+        <div class="panel-group">
+          <div class="panel panel-default solver-single-react" ng-repeat="x in reactSearch.list.data" ng-click="reactSearch.chooseReaction(x.reaction)">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <i class="fa fa-check solver-react-check"></i><span ng-bind-html="x.reaction"></span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div ng-show="reactSearch.enterFullReactField.show" class="thumbnail solver-hint full-react">
+        <p>Вы можете написать всю реакцию самостоятельно:</p>
+        <div ng-click="showActivity('reactEntering')" class="btn btn-default btn-block">Ввести реакцию вручную</div>
+      </div>
+
+      <div ng-show="reactSearch.noConnectField.show" class="thumbnail solver-hint solver-no-connect">
+        <p>
+          Нет соединения с интернетом.
+          <span class="solver-refresh" ng-click="reactSearch.search()"><i class="fa fa-refresh"></i> Обновить</span>
+        </p>
+        <div ng-click="showActivity('reactEntering')" class="btn btn-primary btn-block">Ввести реакцию вручную</div>
+      </div>
+
+    </div>    
+  </div>
+
+
+
+  <div class="scrollable-content reactPage" ng-show="activitiesShow.reactEntering">
+    <div class="reactions-searchbar">
+      <div class="input-group reactions-search">
+        <input id="reaction-full-input" type="text" class="form-control" placeholder="{{'Например: ' + reactEntering.examples[0]}}">
+        <span class="input-group-btn">
+          <button ng-click="reactEntering.enter()" class="btn btn-primary" type="button"><i class="fa fa-check"></i> Готово</button>
+        </span>
+      </div>
+    </div>
+    
+    <div class="container-fluid section section-break">
+      <div ng-show="reactEntering.error.show" class="reactions-error-field alert alert-danger" role="alert">
+        {{reactEntering.error.text}}
+      </div>
+
+      <div ng-show="reactEntering.hintField.show" class="thumbnail solver-hint">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-1 icon-block">
+            <div class="fa fa-long-arrow-up"></div>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-11">
+            <p>Введите полную реакцию, можно без коэффициентов.</p>
+            <p><span class="reactions-more-text">Например:</span> <span class="label label-default">C + O2 = CO2</span> <span class="label label-default">NaOH + FeCl2 = NaCl + Fe(OH)2</span></p>
+            <!-- <div class="solver-more-examples">
+              <span>Другие примеры</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+</div>
+
+
+
+<div ui-content-for="modals">
+  <div ng-include="'./partials/categories/solver/modals/is-react.html'"></div>
+  <div ng-include="'./partials/categories/solver/modals/is-subst.html'"></div>
+  <div ng-include="'./partials/categories/solver/modals/react-examples.html'"></div>
+</div>

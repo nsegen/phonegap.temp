@@ -1,0 +1,21 @@
+<div class="modal goto-pro-modal" ui-if='solverModal' ui-state='solverModal'>
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="solverModal">&times;</button>
+        <h4 class="modal-title">Объяснение решения задач</h4>
+      </div>
+      <div class="modal-body">
+        <img src="./img/goto-pro/solver.jpg">
+        <p>
+          В Pro-версии есть возможность сверить своё решение с решением приложения, решатель задач сможет объяснить, что конкретно происходит в каждом шаге решения задачи, это поможет понять ход решения любых типов задач лучше. И никакой репетитор для этого не нужен!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button ui-turn-off="solverModal" class="btn btn-default">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

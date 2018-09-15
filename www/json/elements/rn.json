@@ -1,0 +1,30 @@
+{
+	"element" : "Rn",
+	"name": {
+		"ru": "Радон",
+		"en": "Radon"
+	},
+	"group" : "8 A",
+	"period" : "6",
+	"atomMass" : "[222]",
+	"elnegativity" : "2,06",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Инертные газы",
+	"val" : ["2", "4", "6"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "−71 °C",
+	"tempBoiling": "−61.7 °C",
+	"discoverer": {
+		"ru": "Фридерик Эрнст Дорн",
+		"en": "Friedrich Ernst Dorn"
+	}
+}

@@ -1,0 +1,23 @@
+<div class="modal goto-pro-modal" ui-if='reactLimitModal' ui-state='reactLimitModal'>
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="reactLimitModal">&times;</button>
+        <h4 class="modal-title">Ограничение на поиск превышено</h4>
+      </div>
+      <div class="modal-body">
+        <img src="./img/goto-pro/react.jpg">
+        <p>
+          В бесплатной версии приложения можно искать {{config.limits.reactions.limit}} реакций в день. В Pro-версии никаких ораничений на поиск реакций нет.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button ng-if="!config.isParentsDesc" ui-sref="goto-pro" class="btn btn-primary">Перейти к Pro-версии</button>
+        <button ng-if="config.isParentsDesc" ui-sref="goto-pro-parents" class="btn btn-primary">Перейти к Pro-версии</button>
+        <button ui-turn-off="reactLimitModal" class="btn btn-default">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

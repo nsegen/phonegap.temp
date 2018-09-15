@@ -1,0 +1,30 @@
+{
+	"element" : "In",
+	"name": {
+		"ru": "Индий",
+		"en": "Indium"
+	},
+	"group" : "3 A",
+	"period" : "5",
+	"atomMass" : "114.818",
+	"elnegativity" : "1,49",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p1",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["3"],
+	"crystalStruct": {
+		"ru": "тетрагональная",
+		"en": "tetragonal"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery lustrous gray"
+	},
+	"tempMelting": "156.5985 °C",
+	"tempBoiling": "2072 °C",
+	"discoverer": {
+		"ru": "Фердинанд Рейх, Иероним Теодор Рихтер",
+		"en": "Ferdinand Reich, Hieronymous Theodor Richter"
+	}
+}

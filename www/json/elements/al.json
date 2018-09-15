@@ -1,0 +1,31 @@
+{
+	"element" : "Al",
+	"name": {
+		"ru": "Алюминий",
+		"en": "Aluminum"
+	},
+	"group" : "3 A",
+	"period" : "3",
+	"atomMass" : "26.9815",
+	"elnegativity" : "1,47",
+	"elconf" : "1s2 2s2 2p6 3s2 3p1",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["3"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированная",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "shiny grey solid"
+	},
+	"tempMelting": "660 °C",
+	"tempBoiling": "2518,82 °C",
+	"discoverer": {
+		"ru": "Ханс Кристиан Э́рстед",
+		"en": "Hans Christian Ørsted"
+	}
+
+}

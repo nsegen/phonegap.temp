@@ -1,0 +1,29 @@
+{
+	"element" : "Se",
+	"name": {
+		"ru": "Селен",
+		"en": "Selenium"
+	},
+	"group" : "6 A",
+	"period" : "4",
+	"atomMass" : "78.96",
+	"elnegativity" : "2,48",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p4",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"val" : ["-2", "4", "6"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal"
+	},
+	"physColor": {
+		"ru": "черный, серый и красный",
+		"en": "black, red, gray"
+	},
+	"tempMelting": "221 °C",
+	"tempBoiling": "685 °C",
+	"discoverer": {
+		"ru": "Йёнс Якоб Берцелиус",
+		"en": "Clemens Alexander Winkler"
+	}
+}

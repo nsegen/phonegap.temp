@@ -1,0 +1,30 @@
+{
+	"element" : "Eu",
+	"name": {
+		"ru": "Европий",
+		"en": "Europium"
+	},
+	"group" : "3 B",
+	"period" : "6",
+	"atomMass" : "151.964",
+	"elnegativity" : "1,01",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f7 5d0 6s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Лантаноиды",
+	"val" : ["2", "3"],
+	"crystalStruct": {
+		"ru": "ромбоэдрическая",
+		"en": "​rhombohedral"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "826 °C",
+	"tempBoiling": "1529 °C",
+	"discoverer": {
+		"ru": "Эжен Демарсе",
+		"en": "Eugène-Anatole Demarçay"
+	}
+}

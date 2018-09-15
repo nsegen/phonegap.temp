@@ -1,0 +1,30 @@
+{
+	"element" : "Hf",
+	"name": {
+		"ru": "Гафний",
+		"en": "Hafnium"
+	},
+	"group" : "4 B",
+	"period" : "6",
+	"atomMass" : "178.49",
+	"elnegativity" : "1,23",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d2 6s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["3", "4"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "​hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристый",
+		"en": "steel gray"
+	},
+	"tempMelting": "2233 °C",
+	"tempBoiling": "4603 °C",
+	"discoverer": {
+		"ru": "Дирк Костер, Дьёрдь де Хевеши",
+		"en": "Dirk Coster, Hevesy György"
+	}
+}

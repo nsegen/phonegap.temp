@@ -1,0 +1,26 @@
+{
+	"element" : "Pb",
+	"name": {
+		"ru": "Свинец",
+		"en": "Lead"
+	},
+	"group" : "4 A",
+	"period" : "6",
+	"atomMass" : "207.2",
+	"elnegativity" : "1,67",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p2",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["2", "4"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-серый",
+		"en": "metallic gray"
+	},
+	"tempMelting": "327.46 °C",
+	"tempBoiling": "1749 °C"
+}

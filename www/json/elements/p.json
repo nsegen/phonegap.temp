@@ -1,0 +1,30 @@
+{
+	"element" : "P",
+	"name": {
+		"ru": "Фосфор",
+		"en": "Phosphorus"
+	},
+	"group" : "5 A",
+	"period" : "3",
+	"atomMass" : "30.9738",
+	"elnegativity" : "2,06",
+	"elconf" : "1s2 2s2 2p6 3s2 3p3",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"val" : ["-3", "3", "5"],
+	"crystalStruct": {
+		"ru": "кубическая, объёмноцентрированная",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "белый, красный, жёлтый, черный ",
+		"en": "colourless, waxy white, yellow, scarlet, red, violet, black"
+	},
+	"tempMelting": "44,15 °C",
+	"tempBoiling": "279,85 °C",
+	"discoverer": {
+		"ru": "Хенниг Бранд",
+		"en": "Hennig Brand"
+	}
+
+}

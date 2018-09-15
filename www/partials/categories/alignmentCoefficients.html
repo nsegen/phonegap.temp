@@ -1,0 +1,84 @@
+<div ui-content-for="title">
+    <span translate="">Расстановка коэффициентов</span>
+</div>
+<div ui-content-for="left">
+  <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+    <i class="navbar-icon-menu"></i>
+  </div>
+</div>
+<div ui-content-for="right">
+  <div class="btn" ui-sref="coefGuide">
+    <i class="navbar-icon-question"></i>
+  </div>
+</div>
+
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="reactions-searchbar">
+            <div class="input-group reactions-search">
+              <input ng-model="equation" type="text" class="form-control" placeholder="{{'Например: ' + defaultEquation}}">
+              <span class="input-group-btn">
+                <button ng-click="alignment()" class="btn btn-primary" type="button" translate>Расставить</button>
+              </span>
+            </div>
+        </div>
+        <div ng-show="readyBalanceShow">
+            <div class="balance-ready-equation">
+                <span ng-repeat="x in subsL">
+                    <substruction substruct="{{x}}" coefficient="{{coefs[$index]}}">
+                        <!--span>{{coefs[$index] | replaceOne}}</span-->
+                    </substruction>
+                    <span ng-if="$index != subsL.length-1">+</span>
+                </span>
+                <span ng-if="coefs.length">=</span>
+                <span ng-repeat="x in subsR">
+                    <substruction substruct="{{x}}" coefficient="{{coefs[$index + subsL.length]}}">
+                        <!--span>{{coefs[$index + subsL.length] | replaceOne}}</span-->
+                    </substruction>
+                    <span ng-if="$index != subsR.length-1">+</span>
+                </span>
+            </div>
+            <div class="balance-ready-balance" ng-if="balance.length==2">
+                <div class="balance-el-header" translate>Метод электронного баланса:</div>
+                <div class="balanceEquation">
+                    <div ng-repeat="x in balance track by $index">
+                        <span>{{x.cr | replaceOne}}{{x.el}}<sub>{{x.cl | replaceOne}}</sub><sup>{{x.powerL | formatNmb | reverse}}</sup></span>
+                        <span ng-if="x.razn>0">+ {{x.razn}}e</span>
+                        <span ng-if="x.razn<0">- {{-x.razn}}e</span>
+                        <span>=</span>
+                        <span>{{x.cl | replaceOne}}{{x.el}}<sub>{{x.cr | replaceOne}}</sub><sup>{{(x.powerR | formatNmb | reverse)}}</sup></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="balanceTableInline">
+                    <div class="balanceTable">
+                        <div>
+                            <div ng-bind="abs(balance[0].razn)"></div>
+                            <div ng-bind="abs(balance[1].razn)"></div>
+                        </div>
+                        <div class="nok"><span ng-bind="abs(balance[1].razn*balance[0].razn/nod(balance[1].razn,balance[0].razn))"></span></div>
+                        <div>
+                            <div ng-bind="abs(balance[1].razn*balance[0].razn/nod(balance[1].razn,balance[0].razn))/abs(balance[0].razn)"></div>
+                            <div ng-bind="abs(balance[1].razn*balance[0].razn/nod(balance[1].razn,balance[0].razn))/abs(balance[1].razn)"></div>
+                        </div>
+                        <div>
+                            <div ng-bind="balance[0].process"></div>
+                            <div ng-bind="balance[1].process"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="errorsShow" ng-if="errors != ''" ng-bind="errors" class="balance-error-field alert alert-danger"></div>
+
+
+        <div ng-show="examplesShow" class="reactions-examples balance-examples">
+            <div class="reactions-examples-field">
+                <span class="reactions-more-text" translate>Другие примеры:</span>
+                <span ng-repeat="example in examples">
+                    <span ng-click="balanceExample(example)" class="reactions-example label label-default">{{example}}</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

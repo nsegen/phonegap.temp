@@ -1,0 +1,34 @@
+<div ng-include="'./partials/other/navbars/nav-menu-only.html'"></div>
+<div ui-content-for="title">
+  <div>Шпоры и таблицы</div>
+</div>
+
+<div class="scrollable-theory">
+    <div ui-sref="cribs" class="guide-header" style="background-image:url('./img/theory/cribs.jpg'); height: {{btnHeight}}">
+      <div class="guide-header-wrapper">
+        <div class="guide-text-wrapper" style="line-height: {{btnHeight}}">
+            <div class="guide-name">
+                <span class="icon icon-paper"></span> Шпоры
+            </div>
+        </div>
+      </div>
+    </div>
+    <div ui-sref="formulas" class="guide-header" style="background-image:url('./img/theory/formulas.jpg'); height: {{btnHeight}}">
+      <div class="guide-header-wrapper">
+        <div class="guide-text-wrapper" style="line-height: {{btnHeight}}">
+            <div class="guide-name">
+                <span class="icon icon-counter"></span> Формулы
+            </div>
+        </div>
+      </div>
+    </div>
+    <div ui-sref="tables" class="guide-header" style="background-image:url('./img/theory/tables.jpg'); height: {{btnHeight}}">
+      <div class="guide-header-wrapper">
+        <div class="guide-text-wrapper" style="line-height: {{btnHeight}}">
+            <div class="guide-name">
+                <span class="icon icon-table"></span> Таблицы
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

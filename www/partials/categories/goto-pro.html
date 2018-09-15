@@ -1,0 +1,143 @@
+<div ng-include="'./partials/other/navbars/nav-menu-only.html'"></div>
+<div ui-content-for="title">
+  <div>Pro-версия</div> 
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="goto-pro-header">
+      <img src="./img/goto-pro-header.jpg">
+      <div class="btn btn-default">
+        <span class="icon icon-lightning"></span> 
+        Купить за {{config.price}}
+      </div>
+    </div>
+    <div class="list-group goto-pro-list">
+      <div class="list-group-item pre-text">
+        <!--Нужны полные решения задач, а не только ответ? Часы в "Защите от учителя" не всегда спасают от внимательного преподавателя? Есть одно простое решение - покупка Pro-версии! Больше никаких проблем с химией, любая контрольная или экзамен будут списаны на отлично. Всего за {{config.price}} ты разблокируешь ряд крутых функций: -->
+        Возможностей бесплатной версии не хватает? Всего за {{config.price}} ты разблокируешь ряд крутых функций - и любая контрольная или экзамен будут списаны на отлично!
+      </div>
+    	<div class="list-group-item" ui-turn-on="solverModal">
+    		<div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-brain"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Полное решение задач</h4>
+            <p>со всеми шагами до самого ответа</p>
+          </div>
+        </div>
+    	</div>
+      <!--
+      <div class="list-group-item" ui-turn-on="adsModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-cry"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Отключение рекламы</h4>
+            <p>абсолютно всей и навсегда</p>
+          </div>
+        </div>
+      </div>
+      -->
+      <div class="list-group-item" ui-turn-on="protectModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-skull"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Защита "Звонок от мамы"</h4>
+            <p>крутая защита от учителя "Звонок от мамы"</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item" ui-turn-on="reactModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-react"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Цепочки превращений</h4>
+            <p>решение не только реакций, но и цепочек превращений</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item" ui-turn-on="balanceModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-scales"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Коэффициенты методом электронного баланса</h4>
+            <p>расстановка коэффициентов методом электронного баланса без интернета</p>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="list-group-item" ui-turn-on="formulasModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-calc"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Калькуляторы формул</h4>
+            <p>доступ к калькуляторам в разделе "Формулы"</p>
+          </div>
+        </div>
+      </div>
+      -->
+      <div class="list-group-item" ui-turn-on="elconfModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-table"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Электронная конфигурация</h4>
+            <p>расписанная по клеткам стрелками вверх и вниз электронная конфигурация в таблице Менделеева</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item" ui-turn-on="molarModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-molar"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Как найти молярную массу</h4>
+            <p>приложение понятнее учителя объяснит, как найти молярную массу любого вещества</p>
+          </div>
+        </div>
+      </div>    	
+    </div>
+    <div class="goto-pro-no-card" ng-show="noCard.show">
+      <div ng-show="noCard.btn.show" ng-click="noCard.btn.showContent()" class="btn btn-block btn-primary no-card-btn" style="margin-bottom: 20px; font-size: 15px">
+        У тебя нет карточки? <span class="icon icon-cry"></span>
+      </div>
+      <div ng-show="noCard.content.show" class="thumbnail">
+        <div>
+          <h4>Мы нашли выход!</h4>
+          <p><strong>Что надо сделать:</strong> Включи описание для родителей и попроси маму или папу купить якобы "образовательное приложение по химии", которое поможет подготовиться к контрольной или экзамену</p>
+          <p><strong>Почему так надо сделать:</strong> Вряд ли родители добровольно купят тебе шпаргалку по химии, но "Химию X10" можно преподнести родителям не как шпаргалку, а как образовательное приложение, которое сильно поможет вам подтянуть твой уровень по химии или подготовиться к какой-нибудь предстоящей контрольной.
+          </p>
+          <p>Как только ты нажмете кнопку <b>"Включить описание для родителей"</b>, эта страница с описанием платных функций полностью изменится. Теперь в описании Pro-версии будет говориться о том, что приложение включает в себя теоретические материалы (вместо шпаргалок), что оно способно учить решать задачи и реакции, из меню скроется защита от учителя. Это даже не будет ложью, просто функции будут описаны в другом ключе, родители увидят то, что и хотели увидеть, а как использовать приложение - это решать тебе!
+          </p>
+          <p><b>Включить/отключить</b> описание для родителей можно в настройках</p>
+        </div>
+        <div ng-click="turnOnParentsDesc()" class="btn btn-default btn-block">Включить описание для родителей</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div ui-content-for="modals">
+  <div ng-include="'./partials/categories/goto-pro/solver-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/ads-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/protect-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/react-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/balance-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/formulas-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/elconf-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro/molar-modal.html'"></div>
+</div>

@@ -1,0 +1,30 @@
+{
+	"element" : "Nb",
+	"name": {
+		"ru": "Ниобий",
+		"en": "Niobium"
+	},
+	"group" : "5 B",
+	"period" : "5",
+	"atomMass" : "92.906",
+	"elnegativity" : "1,23",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d4 5s1",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированая",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "gray"
+	},
+	"tempMelting": "2477 °C",
+	"tempBoiling": "4744 °C",
+	"discoverer": {
+		"ru": "Чарльз Хатчет",
+		"en": "Charles Hatchett"
+	}
+}

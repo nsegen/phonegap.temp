@@ -1,0 +1,30 @@
+{
+	"element" : "U",
+	"name": {
+		"ru": "Уран",
+		"en": "Uranium"
+	},
+	"group" : "3 B",
+	"period" : "7",
+	"atomMass" : "238.029",
+	"elnegativity" : "1,22",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f3 6d1 7s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Актиноиды",
+	"val" : ["3", "4", "5", "6"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "​orthorhombic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery gray metallic"
+	},
+	"tempMelting": "1132.2 °C",
+	"tempBoiling": "4131 °C",
+	"discoverer": {
+		"ru": "Мартин Генрих Клапрот",
+		"en": "Martin Heinrich Klaproth"
+	}
+}

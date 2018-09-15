@@ -1,0 +1,30 @@
+{
+	"element" : "Pu",
+	"name": {
+		"ru": "Плутоний",
+		"en": "Plutonium"
+	},
+	"group" : "3 B",
+	"period" : "7",
+	"atomMass" : "[244]",
+	"elnegativity" : "1,22",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f6 6d0 7s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Актиноиды",
+	"val" : ["3", "4", "5", "6", "7"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "monoclinic"
+	},
+	"physColor": {
+		"ru": "моноклинная",
+		"en": "silvery white"
+	},
+	"tempMelting": "639.4 °C",
+	"tempBoiling": "3228 °C",
+	"discoverer": {
+		"ru": "Гленн Сиборг, Артур Уол, Джозеф Кеннеди, Эмилио Сегре",
+		"en": "Glenn Seaborg, Arthur Wahl? Joseph Kennedy, Emilio Segrè"
+	}
+}

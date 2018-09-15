@@ -1,0 +1,26 @@
+{
+	"element" : "Sn",
+	"name": {
+		"ru": "Олово",
+		"en": "Tin"
+	},
+	"group" : "4 A",
+	"period" : "5",
+	"atomMass" : "118.710",
+	"elnegativity" : "1,72",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p2",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["2", "4"],
+	"crystalStruct": {
+		"ru": "тетрагональная",
+		"en": "tetragonal"
+	},
+	"physColor": {
+		"ru": "серебристо-белый или серый",
+		"en": "silvery-white or gray"
+	},
+	"tempMelting": "231.93 °C",
+	"tempBoiling": "2602 °C"
+}

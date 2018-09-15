@@ -1,0 +1,34 @@
+<div class="modal solver-modal" ui-if='reactExamplesModal' ui-state='reactExamplesModal'>
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="reactExamplesModal">&times;</button>
+        <h4 class="modal-title">Примеры поиска реакций</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"Калий взаимодействует с водой..."</p>
+          <p class="solver-modal-reaction">Вводим: <span class="label label-default">K + H2O</span></p>
+        </div>
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"Какие количества оксида бария и серной кислоты потребуются для получения 100 сульфата бария?"</p>
+          <p class="solver-modal-reaction">Вводим: <span class="label label-default">BaO + H2SO4 = BaSO4</span></p>
+        </div>
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"В реакцию с соляной кислотой вступило 13 г цинка..."</p>
+          <p class="solver-modal-reaction">Вводим: <span class="label label-default">HCl + Zn</span></p>
+        </div>
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"В результате реакции соляной кислоты химическим количеством 2 моль с некоторой солью образовалось 300 г CaCl2..."</p>
+          <p class="solver-modal-reaction">Вводим: <span class="label label-default">HCl = CaCl2</span></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button ui-turn-off="reactExamplesModal" class="btn btn-default">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div style="position: relative">
+	<div>
+		<span>Найдем в таблице Менделеева <span ng-if="List.length>1">все </span>элемент<span ng-if="List.length>1">ы, из которых состоит <span ng-bind-html="substance|substruction"></span>. Это</span>:
+		</span>
+	</div>
+	<div class="molar-mass-table-element" ng-repeat="el in List">
+		<div class="molar-mass-table-element-number" ng-bind="numInTable(table.table[el.elements].element)"></div>
+		<div class="molar-mass-table-element-symbol" ng-bind="table.table[el.elements].element"></div>
+		<div class="molar-mass-table-element-mass" ng-bind="table.table[el.elements].atomMass"></div>
+	</div>
+	<div>
+		<p ng-if="List.length>1">
+			Выпишем их молярные массы (они выделены <span class="molar-red-color">красным</span> цветом). Но выпишем не длинным дробями, а в целых числах:
+		</p>
+		<p ng-if="List.length==1">
+			Выпишем его молярную массу (она выделена <span class="molar-red-color">красным</span> цветом). Но выпишем не длинной дробью, а в целых числах:
+		</p>
+		<p ng-if="List.length>1">
+			<div ng-if="List.length>1" ng-repeat="el in List">
+				{{'M(' + table.table[el.elements].element + ') = ' + trunc(table.table[el.elements].atomMass) + ' г/моль'}}
+			</div>
+		</p>
+		<p ng-if="List.length>1">
+			Чтобы найти молярную массу <span ng-bind-html="substance|substruction"></span>, надо сложить молярные массы всех веществ, из которых состоит <span ng-bind-html="substance|substruction"></span>. То есть надо сложить молярные массы
+			<span ng-repeat="el in List">
+				{{table.table[el.elements].element + ', '}}
+			</span>
+			но если после какого-то из этих элементов стоит число, то его молярную массу еще надо умножить на это число, и уже потом сложить с другими молярными массами. 
+		</p>
+		<p ng-if="List.length>1">
+			Поэтому молярная масса <span ng-bind-html="substance|substruction"></span> будет находиться так:
+		</p>
+	</div>
+
+	<!-- Блокировка с просьбой купить Pro-версию -->
+	<div ng-if="!config.isPurchased" class="molar-goto-pro">
+		<div class="molar-goto-pro-content">
+			<i class="fa fa-lock"></i>
+			<div class="molar-goto-pro-text">
+				Перейди на Pro-версию и узнай, как находятся молярные массы любых веществ!
+			</div>
+			<div ng-if="!config.isParentsDesc" class="goto-pro-block-content">
+				<div ui-sref="goto-pro" class="btn btn-primary goto-pro-bt">Перейти к Pro-версии</div>
+				<div ui-sref="goto-pro" class="more-about-pro-bt">Подробнее о преимуществах Pro-версии</div>
+			</div>
+			<div ng-if="config.isParentsDesc" class="goto-pro-block-content">
+				<div ui-sref="goto-pro-parents" class="btn btn-primary goto-pro-bt">Перейти к Pro-версии</div>
+				<div ui-sref="goto-pro-parents" class="more-about-pro-bt">Подробнее о преимуществах Pro-версии</div>
+			</div>
+		</div>
+	</div>
+</div>

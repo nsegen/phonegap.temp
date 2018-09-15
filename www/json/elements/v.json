@@ -1,0 +1,31 @@
+{
+	"element" : "V",
+	"name": {
+		"ru": "Ванадий",
+		"en": "Vanadium"
+	},
+	"group" : "5 B",
+	"period" : "4",
+	"atomMass" : "50.942",
+	"elnegativity" : "1,45",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d3 4s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированная",
+		"en": "​body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "blue-silver-grey"
+	},
+	"tempMelting": "1887 °C",
+	"tempBoiling": "3377 °C",
+	"discoverer": {
+		"ru": "Андрес Мануэль дель Рио",
+		"en": "Andrés Manuel del Río"
+	}
+
+}

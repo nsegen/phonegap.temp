@@ -1,0 +1,30 @@
+{
+	"element" : "Pd",
+	"name": {
+		"ru": "Палладий",
+		"en": "Palladium"
+	},
+	"group" : "8 B",
+	"period" : "5",
+	"atomMass" : "106.42",
+	"elnegativity" : "1,35",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s0",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "4"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированная",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1554.9 °C",
+	"tempBoiling": "2963 °C",
+	"discoverer": {
+		"ru": "Уильям Хайд Волластон",
+		"en": "William Hyde Wollaston"
+	}
+}

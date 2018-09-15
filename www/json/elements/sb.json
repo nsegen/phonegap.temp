@@ -1,0 +1,26 @@
+{
+	"element" : "Sb",
+	"name": {
+		"ru": "Сурьма",
+		"en": "Antimony"
+	},
+	"group" : "5 A",
+	"period" : "5",
+	"atomMass" : "121.760",
+	"elnegativity" : "1,82",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p3",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полуметаллы",
+	"val" : ["-3", "3", "5"],
+	"crystalStruct": {
+		"ru": "тригональная",
+		"en": "rhombohedral"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery lustrous gray"
+	},
+	"tempMelting": "630.63 °C",
+	"tempBoiling": "1635 °C"
+}

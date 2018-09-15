@@ -1,0 +1,30 @@
+{
+	"element" : "Te",
+	"name": {
+		"ru": "Теллур",
+		"en": "Tellurium"
+	},
+	"group" : "6 A",
+	"period" : "5",
+	"atomMass" : "127.60",
+	"elnegativity" : "2,01",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p4",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Полуметаллы",
+	"val" : ["-2", "4", "6"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal"
+	},
+	"physColor": {
+		"ru": "серебристый",
+		"en": "silvery lustrous gray, brown-black powder "
+	},
+	"tempMelting": "449.51 °C",
+	"tempBoiling": "988 °C",
+	"discoverer": {
+		"ru": "Ференц Мюллер фон Рейхенштейн",
+		"en": "Franz-Joseph Müller von Reichenstein"
+	}
+}

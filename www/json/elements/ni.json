@@ -1,0 +1,30 @@
+{
+	"element" : "Ni",
+	"name": {
+		"ru": "Никель",
+		"en": "Nickel"
+	},
+	"group" : "8 B",
+	"period" : "4",
+	"atomMass" : "58.693",
+	"elnegativity" : "1,75",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d8 4s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "​face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "lustrous, metallic, silver"
+	},
+	"tempMelting": "1455 °C",
+	"tempBoiling": "2730 °C",
+	"discoverer": {
+		"ru": "Аксель Кронштедт",
+		"en": "Axel Frederic von Cronstedt"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"element" : "Ta",
+	"name": {
+		"ru": "Тантал",
+		"en": "Tantalum"
+	},
+	"group" : "5 B",
+	"period" : "6",
+	"atomMass" : "180.948",
+	"elnegativity" : "1,33",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d3 6s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированая",
+		"en": "body-centered cubic, ​tetragonal"
+	},
+	"physColor": {
+		"ru": "серый",
+		"en": "gray blue"
+	},
+	"tempMelting": "3017 °C",
+	"tempBoiling": "5458 °C",
+	"discoverer": {
+		"ru": "Андерс Густав Экеберг",
+		"en": "Anders Gustaf Ekeberg"
+	}
+}

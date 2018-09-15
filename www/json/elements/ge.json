@@ -1,0 +1,30 @@
+{
+	"element" : "Ge",
+	"name": {
+		"ru": "Германий",
+		"en": "Germanium"
+	},
+	"group" : "4 A",
+	"period" : "4",
+	"atomMass" : "72.64",
+	"elnegativity" : "2,02",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p2",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полуметаллы",
+	"val" : ["2", "4"],
+	"crystalStruct": {
+		"ru": "алмазная",
+		"en": "diamond cubic"
+	},
+	"physColor": {
+		"ru": "светлой-серый",
+		"en": "grayish-white"
+	},
+	"tempMelting": "938.25 °C",
+	"tempBoiling": "2833 °C",
+	"discoverer": {
+		"ru": "Клеменс Александр Винклер",
+		"en": "Clemens Alexander Winkler"
+	}
+}

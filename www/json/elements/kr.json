@@ -1,0 +1,30 @@
+{
+	"element" : "Kr",
+	"name": {
+		"ru": "Криптон",
+		"en": "Krypton"
+	},
+	"group" : "8 A",
+	"period" : "4",
+	"atomMass" : "83.798",
+	"elnegativity" : "2,94",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Инертные газы",
+	"val" : ["2", "4"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "−157.37 °C",
+	"tempBoiling": "−153.415 °C",
+	"discoverer": {
+		"ru": "Уильям Рамзай, Моррис Траверс",
+		"en": "William Ramsay, Morris Travers"
+	}
+}

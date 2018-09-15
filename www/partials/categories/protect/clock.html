@@ -1,0 +1,32 @@
+<div ui-content-for="left">
+  <div back class="btn back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+<div ui-content-for="right"></div>
+<div ui-content-for="title">
+  <div>Часы</div> 
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break" ng-controller="ProtectClockController">
+
+      <div class="thumbnail" style="margin-top: 10px;">
+        <img src="./img/protect/default/{{config.os}}/splash.jpg">
+        <div ng-click="checkClockProtection()" ng-show="checkBtShow" class="btn btn-primary btn-lg btn-block" role="button">
+          Выбрать <i class="fa fa-check"></i>
+        </div>
+        <div ng-show="checkedBtShow" class="btn btn-default btn-lg btn-block" role="button">
+          <i class="fa fa-check"></i> Выбрано
+        </div>
+        <div style="padding:20px">
+          <p>
+            <p>Когда учитель подойдет, чтобы сделать замечание и забрать телефон, ты спокойно сможешь показать ему экран с часами и оправдать себя: "Я просто хотел узнать, сколько минут осталось до конца контрольной" / "Я ждал, пока на часах будет 11:11, чтобы загадать желание (хорошо написать эту контрольную). Блин, нельзя ведь рассказывать, а то не сбудется... Ну вот, опять 2 получу!", или насколько хватит твоей фантазии и смекалки.</p> 
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

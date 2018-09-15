@@ -1,0 +1,30 @@
+{
+	"element" : "Fr",
+	"name": {
+		"ru": "Франций",
+		"en": "Francium"
+	},
+	"group" : "1 A",
+	"period" : "7",
+	"atomMass" : "[223]",
+	"elnegativity" : "0,86",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 7s1",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щелочные металлы",
+	"val" : ["1"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированая",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "металлический",
+		"en": "metallic"
+	},
+	"tempMelting": "27 °C",
+	"tempBoiling": "677 °C",
+	"discoverer": {
+		"ru": "Маргарита Катрин Перей",
+		"en": "Marguerite Catherine Perey"
+	}
+}

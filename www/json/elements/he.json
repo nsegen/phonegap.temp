@@ -1,0 +1,31 @@
+{
+	"element" : "He",
+	"name": {
+		"ru": "Гелий",
+		"en": "Helium"
+	},
+	"group" : "8 A",
+	"period" : "1",
+	"atomMass" : "4.0026",
+	"elnegativity" : "5,5",
+	"elconf" : "1s2",
+	"color" : "red",
+	"class" : "Неметаллы",
+	"subclass" : "Инертные газы",
+	"val" : ["0"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "-272,2 °C",
+	"tempBoiling": "-268,94 °C",
+	"discoverer": {
+		"ru": "Уильям Рамзай, Уильям Крукс",
+		"en": "William Ramsay, William Crookes"
+	}
+
+}

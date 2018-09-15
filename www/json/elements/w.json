@@ -1,0 +1,30 @@
+{
+	"element" : "W",
+	"name": {
+		"ru": "Вольфрам",
+		"en": "Tungsten"
+	},
+	"group" : "6 B",
+	"period" : "6",
+	"atomMass" : "183.84",
+	"elnegativity" : "1,40",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d4 6s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "6"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированая",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "стальной белый",
+		"en": "grayish white"
+	},
+	"tempMelting": "3422 °C",
+	"tempBoiling": "5930 °C",
+	"discoverer": {
+		"ru": "Карл Вильгельм Шееле",
+		"en": "Carl Wilhelm Scheele"
+	}
+}

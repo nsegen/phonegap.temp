@@ -1,0 +1,553 @@
+#table {
+	background-image: url('../img/bg.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.periodInTable,
+.line{
+	display: inline-block;
+}
+
+.elInTable,
+.group{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	padding: 3px;
+	position: relative;
+}
+
+/*
+.elInTable:hover {
+	background: #EAEAEA !important;
+}
+*/
+
+.empty{
+	cursor: default !important;
+	opacity: 0 !important;
+    color: transparent !important;
+}
+
+.empty:hover,
+.empty:focus,
+.empty:active {
+	cursor: default !important;
+	opacity: 0 !important;
+    color: transparent !important;
+}
+
+.elConfLine{
+	width: 20px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 16px;
+	height: 20px;
+	background-color: white;
+	display: inline-block;
+	border: 1px solid #B9B9B9;
+	margin: 5px 1px;
+    font-size: 13px;
+}
+
+.elementContent {
+	color: #efefef;
+}
+
+.periodic-table-row {
+	/*height: 55px;*/
+}
+
+.elementContent:hover,
+.elementContent:focus {
+	color: #151E23;
+	text-decoration: none;
+}
+
+.table{
+	min-width: 1050px;
+	position: relative;
+}
+
+#groups{
+	margin-top: 25px;
+    width: 100%;
+    line-height: 20px;
+    height: 25px;
+    background: rgb(31, 34, 49);
+    color: #71768b;
+    z-index: 9999;
+}
+
+#groups .elInTable {
+	text-align: center;
+	height: 25px;
+}
+
+#groups .elInTable:hover,
+#groups .elInTable:focus {
+	background: transparent !important;
+}
+
+
+#periods{
+	position: absolute;
+	top: 15px;
+	width: 25px;
+	left: 0;
+	text-align: center;
+    background: rgba(28, 31, 43, 0.95);
+    color: #7b8096;
+	z-index: 9998;
+	padding-top: 30px;
+}
+
+#periods div {
+	/*height: 55px;*/
+    vertical-align: middle;
+    /*line-height: 55px;*/
+}
+
+
+.table {
+	margin-top: -25px;
+	margin-bottom: 0;
+	margin-left: 25px;
+}
+
+.actinoids-row,
+.lantanoids-row {
+	position: absolute;
+}
+
+.table-element-number {
+    position: absolute;
+    right: 2px;
+    font-size: 11px;
+    top: 2px;
+}
+
+.table-element-symbol {
+	font-size: 13px;
+	font-family: 'PT Sans Bold';
+}
+
+.table-element-name {
+	font-size: 8px;
+}
+
+.table-element-mass {
+	font-size: 8px;
+}
+
+.ac-la-star {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.ac-la-star .navbar-icon-close:before {
+	margin-left: 0;
+	font-size: 25px;
+}
+
+.lantanoids-row {
+    margin-left: 110px;
+    margin-top: 0px;
+}
+
+.actinoids-row {
+    margin-left: 110px;
+    margin-top: 5px;	
+}
+
+
+.tbl {
+  width: 100%;
+}
+
+.Неметаллы {
+	background: #a770b4;
+	color: #151E23;
+    border-bottom: 1px solid #9C68A9;
+    border-right: 1px solid #9C68A9;
+}
+
+.Металлы {
+	background: #4eaec4;
+	color: #151E23;
+}
+
+.Инертные.газы {
+	background: #b2b2b2;
+	border-bottom: 1px solid #A2A2A2;
+    border-right: 1px solid #A2A2A2;
+}
+
+.Щелочные.металлы {
+	background: #ff667c;
+	border-right: 1px solid #EC6074;
+    border-bottom: 1px solid #EC6074;
+}
+
+.Щёлочноземельные.металлы {
+	background: #f29c61;
+    border-right: 1px solid #E4935B;
+    border-bottom: 1px solid #E4935B;
+}
+
+.Полуметаллы {
+	background: #4A97AF;
+	border-right: 1px solid #478EA4;
+    border-bottom: 1px solid #478EA4;
+}
+
+.Галогены {
+	background: #D275A4;
+	border-bottom: 1px solid #C16996;
+    border-right: 1px solid #C16996;
+}
+
+.Полупроводники {
+	background: #4eaec4;
+    border-bottom: 1px solid #49A2B7;
+    border-right: 1px solid #49A2B7;
+}
+
+.Переходные.металлы {
+	background: #edc85f;
+	border-right: 1px solid #DEBC5A;
+    border-bottom: 1px solid #DEBC5A;
+}
+
+.Лантаноиды,
+.Актиноиды,
+.lanactin {
+    background: #1f2231;
+    color: #989db1;
+    border-right: 1px solid #3A4A56;
+    border-bottom: 1px solid #171a25;
+}
+
+/*
+.lanactin div{
+	font-size: 9.5px;
+}
+*/
+
+.element-desc-wrapper {
+	position: fixed;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(34, 48, 57, 0.68);
+	z-index: 99999;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.element-desc-content {
+	position: absolute;
+	top: 20%;
+	bottom: 5%;
+	left: 10%;
+	right: 10%;
+	background: white;
+	box-shadow: 0px 5px 20px rgba(23, 32, 37, 0.73);
+}
+
+.element-desc-body {
+	position: absolute;
+	top: 113px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 15px;
+	overflow-y: scroll;
+}
+
+.element-desc-header {
+	padding: 15px;
+	position: relative;
+}
+
+.element-desc-symbol {
+	font-size: 60px;
+	line-height: 60px;
+    font-family: 'PT Sans Bold';
+}
+
+.element-desc-name {
+	font-size: 22px;
+	line-height: 22px;
+}
+
+.element-desc-number {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.element-desc-close {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: -30px;
+    top: -45px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.element-desc-list-name {
+	font-weight: bold;
+    color: grey;
+}
+
+
+
+.table-denotation .element-desc-header {
+	background: url('../img/bg2.png');
+	background-size: cover;
+	background-position: center;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+	color: white;
+	font-size: 19px;
+	padding: 0 15px;
+}
+
+.table-denotation .icon-table {
+	color: #3CC263;
+	font-size: 23px;
+}
+
+.table-denotation .element-desc-body {
+	top: 60px;
+}
+
+.table-info-box {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.table-info-box-name {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.elconf-divider {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.elconf-divider-line {
+	width: 100%;
+	height: 1px;
+	line-height: 1px;
+	background: #B9B9B9;
+	margin-top: 10px;
+}
+
+.energy-level-number {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 14px;
+	font-size: 14px;
+}
+
+.energy-level-name {
+    width: 100px;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 10px 5px;
+}
+
+.energy-levels-lines {
+	margin-left: 20px;
+}
+
+.energy-levels-lines div {
+	text-align: center;
+	padding-top: 3px;
+	display: inline-block;
+}
+
+.energy-levels-lines-s {
+	width: 46px;
+	border-top: 1px solid #edc85f;
+}
+
+.energy-levels-lines-p {
+	width: 90px;
+	border-top: 1px solid #ff667c;
+}
+
+.energy-levels-lines-d {
+	width: 130px;
+	border-top: 1px solid #4eaec4;
+}
+
+.energy-levels-lines-f {
+	width: 154px;
+	border-top: 1px solid #b2b2b2;
+}
+
+.energy-levels-lines-orbitals {
+	font-size: 11px;
+}
+
+.elconf-table-block-wrapper {
+	overflow-x: scroll;
+}
+
+.elconf-table-block {
+	min-width: 500px;
+}
+
+.balanceTable>div{
+	display: table-cell;
+	vertical-align: middle;
+    border-left: 1px solid #6f6f6f;
+    padding: 0 5px;
+}
+
+.balanceTableInline,
+.balanceEquation{
+	float: left;
+}
+
+.balanceTableInline {
+	margin-left: 10px;
+}
+
+.balanceTable {
+	display: table;
+	vertical-align: middle;
+}
+
+.nok{
+	display: table;
+	vertical-align: middle;
+}
+
+
+.nok>span{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.balance-ready-balance {
+	overflow: auto;
+	font-size: 15px;
+	padding: 25px 15px;
+	background: #ececec;
+	border-top: 1px solid #d8d8d8;
+}
+
+.balance-el-header {
+	margin-bottom: 10px;
+	margin-top: -5px;
+	color: #8f8c8c;
+}
+
+.balance-error-field {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.balance-ready-equation {
+  padding: 40px 10px;
+  background: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.balance-examples {
+	padding: 55px 15px;
+	background: #ebebeb;
+	line-height: 23px;
+}
+
+.balance-examples .reactions-examples-field {
+	margin-top: 0;
+}
+
+.balance-examples .label-default {
+	background-color: #d9d9d9;
+    color: #7a7a7a;
+}
+
+/* Размер текста в таблице Менделеева */
+@media (min-height: 500px) {
+	.table-element-symbol {
+		font-size: 13px;
+	}
+	.table-element-name {
+		font-size: 9px;
+	}
+	.table-element-mass {
+		font-size: 9px;
+	}
+}
+
+@media (min-height: 550px) {
+	.table-element-symbol {
+		font-size: 15px;
+	}
+	.table-element-number {
+		font-size: 12px;
+	}
+}
+
+@media (min-height: 570px) {
+	.table-element-name {
+    	font-size: 10px;
+	}
+	.table-element-mass {
+		font-size: 10px;
+	}
+}
+
+@media (min-height: 600px) {
+	.table-element-symbol {
+		font-size: 17px;
+	}
+	.table-element-name {
+		font-size: 10px;
+	}
+	.table-element-mass {
+		font-size: 11px;
+	}
+	.table-element-number {
+		font-size: 13px;
+	}
+	.elInTable, .group {
+		padding: 5px;
+	}
+}

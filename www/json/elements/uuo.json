@@ -1,0 +1,21 @@
+{
+	"element" : "(Uuo)",
+	"name": {
+		"ru": "Унуноктий",
+		"en": "Ununoctium"
+	},
+	"group" : "8 A",
+	"period" : "7",
+	"atomMass" : "[294]",
+	"elnegativity" : "",
+	"elconf" : "",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Инертные газы",
+	"val" : ["0"],
+	"tempBoiling": "80±30 °C",
+	"discoverer": {
+		"ru": "Ливерморская национальная лаборатория, Объединённый институт ядерных исследований",
+		"en": "Lawrence Livermore National Laboratory, Joint Institute for Nuclear Research"
+	}
+}

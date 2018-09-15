@@ -1,0 +1,30 @@
+{
+	"element" : "Os",
+	"name": {
+		"ru": "Осмий",
+		"en": "Osmium"
+	},
+	"group" : "8 B",
+	"period" : "6",
+	"atomMass" : "190.23",
+	"elnegativity" : "1,52",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d6 6s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5", "6", "8"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery, blue cast"
+	},
+	"tempMelting": "3033 °C",
+	"tempBoiling": "5012 °C",
+	"discoverer": {
+		"ru": "Смитсон Теннант",
+		"en": "Smithson Tennant"
+	}
+}

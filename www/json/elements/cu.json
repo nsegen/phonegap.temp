@@ -1,0 +1,26 @@
+{
+	"element" : "Cu",
+	"name": {
+		"ru": "Медь",
+		"en": "Copper"
+	},
+	"group" : "1 B",
+	"period" : "4",
+	"atomMass" : "63.546",
+	"elnegativity" : "1,75",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s1",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["1", "2", "3"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "​face-centered cubic"
+	},
+	"physColor": {
+		"ru": "золотисто-розовый",
+		"en": "red-orange"
+	},
+	"tempMelting": "1083,4 °C",
+	"tempBoiling": "2562 °C"
+}

@@ -1,0 +1,21 @@
+<div class="modal goto-pro-modal" ui-if='elconfModal' ui-state='elconfModal'>
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="elconfModal">&times;</button>
+        <h4 class="modal-title">Дополнение к таблице Менделеева</h4>
+      </div>
+      <div class="modal-body">
+        <img src="./img/goto-pro/elconf.jpg">
+        <p>
+          Благодаря Pro-версии, в таблице Менделеева для каждого элемента появится графическая электронная конфигурация.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button ui-turn-off="elconfModal" class="btn btn-default">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

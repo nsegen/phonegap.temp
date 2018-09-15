@@ -1,0 +1,30 @@
+{
+	"element" : "Ir",
+	"name": {
+		"ru": "Иридий",
+		"en": "Iridium"
+	},
+	"group" : "8 B",
+	"period" : "6",
+	"atomMass" : "192.217",
+	"elnegativity" : "1,55",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d7 6s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5", "6"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "2446 °C",
+	"tempBoiling": "4130 °C",
+	"discoverer": {
+		"ru": "Смитсон Теннант",
+		"en": "Smithson Tennant"
+	}
+}

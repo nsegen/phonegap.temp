@@ -1,0 +1,55 @@
+<div ng-include="'./partials/other/navbars/nav-single-guide.html'"></div>
+
+
+<div class="scrollable">  
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break guide-page">
+        <div class="row" style="margin-top:-10px">
+            <div class="guide-header col-md-12" style="background-image:url('./img/guides/molar.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name" id="anchor_top">
+                        <span class="icon icon-molar"></span> Молярные массы
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="thumbnail">
+                <div class>
+                    <div class="list-group">
+                      <a ng-click="gotoAnchor('1')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Зачем нужен поиск молярных масс?
+                      </a>
+                      <a ng-click="gotoAnchor('2')" class="list-group-item">
+                        <i class="fa fa-file-text-o"></i> Как пользоваться этой функцией?
+                      </a>
+                    </div>
+                </div>
+                <div class="guide-page-fulltext">
+                    <div class="guide-page-section" id="anchor_1">
+                        <h2>Зачем нужен поиск молярных масс?</h2>
+                        <div>
+                          <p>Найти молярную массу простого вещества можно легко в таблице Менделеева, но что делать, если надо найти массу сложного вещества, например, C2H5OH? Можно по старинке расписать ее на листочке и посчитать на калькуляторе, но есть способ намного проще и быстрее: всего лишь надо ввести формулу вещества - и приложение само мгновенно посчитает молярную массу. Кроме этого, полностью распишет и объяснит, как она находится, что с чем надо сложить и что на что умножить!</p>
+                        </div>
+                    </div>
+                    <div class="guide-page-section" id="anchor_2">
+                        <h2>Как пользоваться этой функцией?</h2>
+                        <div>
+                          <p>Функция понимает формулы веществ, но не запись вещества словами</p>
+                          <p>
+                            <strong>Правильно:</strong> C2H5OH
+                          </p>
+                          <p>
+                            <strong>Неправильно:</strong> этанол, c2h5oh, C2-H5-OH
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>

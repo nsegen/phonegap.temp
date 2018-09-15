@@ -1,0 +1,18 @@
+<div ui-content-for="left">
+  <div back class="btn back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+<div ui-content-for="right"></div>
+<div ui-content-for="title">
+  <div ng-bind="navbarTitle | translate"></div>
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="thumbnail single-crib-content">
+      <h3 class="single-crib-title" ng-bind="singleCrib.title"></h3>
+      <div class="single-crib-text" ng-bind-html="singleCrib.content | toTrusted"></div>
+    </div>
+  </div>
+</div>

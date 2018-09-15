@@ -1,0 +1,30 @@
+{
+	"element" : "O",
+	"name": {
+		"ru": "Кислород",
+		"en": "Oxygen"
+	},
+	"group" : "6 A",
+	"period" : "2",
+	"atomMass" : "15.9994",
+	"elnegativity" : "3,5",
+	"elconf" : "1s2 2s2 2p4",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"val" : ["-2", "-1", "2"],
+	"crystalStruct": {
+		"ru": "моноклинная",
+		"en": "monoclinic"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "-218,35 °C",
+	"tempBoiling": "-182,96 °C",
+	"discoverer": {
+		"ru": "Карл Вильгельм Шееле",
+		"en": "Carl Wilhelm Scheele"
+	}
+
+}

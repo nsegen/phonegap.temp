@@ -1,0 +1,37 @@
+<div class="modal solver-modal" ui-if='isSubstModal' ui-state='isSubstModal'>
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="isSubstModal">&times;</button>
+        <h4 class="modal-title">Известно ли вещество?</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"Масса калия известна и равняется 145 г, найдите его химическое количество n."</p>
+          <p class="solver-modal-reaction">Известно ли вещество: <span class="label label-default">Да</span></p>
+        </div>
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"
+          Найдите химическое количество магния, содержащегося в магниевой руде массой 500 г с массовой долей магния 40%?"</p>
+          <p class="solver-modal-reaction">Известно ли вещество: <span class="label label-default">Да</span></p>
+        </div>
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"Масса вещества равняется 20 г, а его молярная масса - 100 г/моль. Найдите химическое количество вещества"</p>
+          <p class="solver-modal-reaction">Известно ли вещество: <span class="label label-default label-no">Нет</span></p>
+        </div>
+        <!--
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"Найдите плотность неизвестного вещества, если его масса равняется 40 г, а объем - 4 л."</p>
+          <p class="solver-modal-reaction">Известно ли вещество: <span class="label label-default label-no">Нет</span></p>
+        </div>
+        -->
+      </div>
+      <div class="modal-footer">
+        <button ui-turn-off="isSubstModal" class="btn btn-default">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

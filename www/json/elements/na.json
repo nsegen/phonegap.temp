@@ -1,0 +1,31 @@
+{
+	"element" : "Na",
+	"name": {
+		"ru": "Натрий",
+		"en": "Sodium"
+	},
+	"group" : "1 A",
+	"period" : "3",
+	"atomMass" : "22.9898",
+	"elnegativity" : "1,01",
+	"elconf" : "1s2 2s2 2p6 3s1",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щелочные металлы",
+	"val" : ["1"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированная",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white metallic"
+	},
+	"tempMelting": "97,81 °C",
+	"tempBoiling": "882,95 °C",
+	"discoverer": {
+		"ru": "Гемфри Дэви",
+		"en": "Humphry Davy"
+	}
+
+}

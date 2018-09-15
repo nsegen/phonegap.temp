@@ -1,0 +1,77 @@
+<div ui-content-for="title">
+	<span>Найти молярную массу</span>
+</div>
+<div ui-content-for="left">
+  <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+    <i class="navbar-icon-menu"></i>
+  </div>
+</div>
+<div ui-content-for="right">
+  <div class="btn" ui-sref="molarGuide">
+    <i class="navbar-icon-question"></i>
+  </div>
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+  	<div class="molar-mass-main-block">
+	    <div>
+	    	<div class="molar-mass-main-block-desc">Введите формулу вещества</div>
+	    	<input id="molarMassSubstanceField" class="form-control" placeholder="{{'Например: ' + defaultSubstance}}" ng-model="molarMassSubstanceField" type="text"/>
+	    	<div class="btn btn-primary btn-block" ng-click="calculate()">Найти молярную массу</div>
+	    </div>
+	    <!--div>
+	    	<div ng-repeat="el in List">
+	    		<h1>{{el.elements}}</h1>
+	    	</div>
+	    <div-->
+	    <div class="row" ng-if="List.err">
+	    	<div class="col-md-12 col-sm-12 col-xs-12 molar-mass-measure">
+		    	<span ng-bind="List.err"></span>
+	    	</div>
+	    </div>
+
+	    <div class="row" ng-if="!List.err">
+	    	<div class="col-md-6 col-sm-6 col-xs-6 molar-mass-value">
+	    		<span ng-bind="M*coefficient"></span>
+	    	</div>
+	    	<div class="col-md-6 col-sm-6 col-xs-6 molar-mass-measure">
+		    	<select ng-model="coefficient">
+		    		<option value="1000">мг/моль</option>
+		    		<option value="1">г/моль</option>
+		    		<option value="0.001">кг/моль</option>
+		    	</select>
+	    	</div>
+	    </div>
+	</div>
+	<div ng-show="!List.err">
+	    <div class="molar-mass-block" ng-if="List.length >= 1">
+	    	<div >
+		    	<h4>Как найти молярную массу <span ng-bind-html="substance|substruction"></span>:</h4>
+		    	<div ng-show="more" ng-include="'./partials/other/molarMassMore.html'"></div>
+		    </div>
+	    	<div>
+	    		<span>M(<span ng-bind-html="substance|substruction"></span>) = </span>
+	    		<span ng-if="List.length > 1">
+		    		<span ng-repeat="el in List">
+		    			M(<span>{{el.coef|replaceOne}}</span>{{table.table[el.elements].element}})<span ng-if="!$last"> + </span> 
+		    		</span>
+		    		<span>=</span>
+		    		<span ng-repeat="el in List">
+		    			<span ng-if="el.coef > 1">{{el.coef}}&times;</span>{{trunc(table.table[el.elements].atomMass)}}<span ng-if="!$last"> + </span> 
+		    		</span>
+		    		<span>=</span>
+		    	</span>
+		    	<span>{{M}} (г/моль)</span>
+	    	</div>
+	    	<div class="btn btn-default" ng-show="List.length >= 1" ng-click="showMore()" ng-bind="showHide | translate"></div>
+	    </div>
+	    <div ng-if="List.length >= 1" class="molar-mass-block">
+	    	<h4>Доля элементов в <span ng-bind-html="substance|substruction"></span>:</h4>
+	    	<div ng-repeat="el in List">
+	   			{{table.table[el.elements].element}} : {{(List.length == 1) ? '100%' : trunc(table.table[el.elements].atomMass*100*el.coef/M) + '%'}}
+	   		</div>
+    	</div>
+    </div>
+  </div>
+</div>

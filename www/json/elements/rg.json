@@ -1,0 +1,28 @@
+{
+	"element" : "Rg",
+	"name": {
+		"ru": "Рентгений",
+		"en": "Roentgenium"
+	},
+	"group" : "1 B",
+	"period" : "7",
+	"atomMass" : "[281]",
+	"elnegativity" : "",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f14 6d9 7s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["0"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированная",
+		"en": "​face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристый",
+		"en": "silvery"
+	},
+	"discoverer": {
+		"ru": "Институт тяжёлых ионов",
+		"en": "GSI Helmholtz Centre for Heavy Ion Research"
+	}
+}

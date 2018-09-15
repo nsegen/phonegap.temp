@@ -1,0 +1,31 @@
+{
+	"element" : "Be",
+	"name": {
+		"ru": "Бериллий",
+		"en": "Beryllium"
+	},
+	"group" : "2 A",
+	"period" : "2",
+	"atomMass" : "9.0122",
+	"elnegativity" : "1,47",
+	"elconf" : "1s2 2s2",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щёлочноземельные металлы",
+	"val" : ["2"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "светло-серый",
+		"en": "white-gray metallic"
+	},
+	"tempMelting": "1287 °C",
+	"tempBoiling": "2970 °C",
+	"discoverer": {
+		"ru": "Луи Никола Воклен",
+		"en": "Louis Nicolas Vauquelin"
+	}
+
+}

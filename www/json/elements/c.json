@@ -1,0 +1,29 @@
+{
+	"element" : "C",
+	"name": {
+		"ru": "Углерод",
+		"en": "Carbon"
+	},
+	"group" : "4 A",
+	"period" : "2",
+	"atomMass" : "12.0107",
+	"elnegativity" : "2,50",
+	"elconf" : "1s2 2s2 2p2",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"val" : ["-4", "2", "3"],
+	"crystalStruct": {
+		"ru": "гексагональная (графит), кубическая (алмаз)",
+		"en": "simple hexagonal (graphite), cubic (diamond)"
+	},
+	"physColor": {
+		"ru": "матово-чёрный (графит), прозрачный (алмаз)",
+		"en": "graphite: black, diamond: clear"
+	},
+	"tempBoiling": "3506,85 °C",
+	"discoverer": {
+		"ru": "Древние египтяне",
+		"en": "Egyptians"
+	}
+
+}

@@ -1,0 +1,134 @@
+<div class="element-desc-wrapper">
+	<div class="element-desc-content">
+		<i class="navbar-icon-close element-desc-close" ui-sref="table"></i>
+		<div class="{{'element-desc-header ' + element['class'] + ' ' + element['subclass']}}">
+			<div class="element-desc-symbol">{{element['element']}}</div>
+			<div class="element-desc-name">{{element['name'][lang]}}</div>
+			<div class="element-desc-number">108</div>
+		</div>
+		<div class="element-desc-body">
+
+
+			<ul class="list-group">
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Период</p>
+					<p class="element-desc-list-value">{{element['period']}}</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Группа</p>
+					<p class="element-desc-list-value">{{element['group']}}</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Атомная масса</p>
+					<p class="element-desc-list-value">{{element['atomMass']}}</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Класс</p>
+					<p class="element-desc-list-value">{{element['class']}}</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Подкласс</p>
+					<p class="element-desc-list-value">{{element['subclass']}}</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Валентности</p>
+					<p class="element-desc-list-value">
+						<span ng-repeat="i in element['val']">
+							{{i}}
+						</span>
+					</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Кристаллическая решетка</p>
+					<p class="element-desc-list-value">
+						{{element['crystalStruct'][lang]}}
+					</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Цвет</p>
+					<p class="element-desc-list-value">{{element['physColor'][lang]}}</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Температура плавления</p>
+					<p class="element-desc-list-value">
+						{{element['tempMelting']}}
+					</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Температура кипения</p>
+					<p class="element-desc-list-value">
+						{{element['tempBoiling']}}
+					</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Электронная конфигурация</p>
+					<p class="element-desc-list-value">
+						<div>
+							<span ng-repeat="i in element['elconf'] | divided">
+								{{i.substring(0,2)}}<sup>{{i.substring(2)}}</sup>
+							</span>
+						</div>
+						<div class="btn btn-default" ng-click="showMore=!showMore">Подробнее</div>
+						<div ng-show="showMore" class="elconf-table-block-wrapper">
+							<div class="elconf-table-block">
+								<div class="energy-level-name">
+									Энергетические уровни
+								</div>
+								<div ng-repeat="i in elconf">
+									<div class="energy-level-number">
+										{{elconf.length - elconf.indexOf(i)}}
+									</div>
+									<div ng-repeat="j in i['orb']" class="line" >
+										<div ng-repeat="l in j['o'] track by $index" class="elConfLine">
+											{{l}}
+										</div>
+										<div class="elconf-divider" ng-if="j!==i['orb'][i['orb'].length-1]"><div class="elconf-divider-line"></div></div>
+									</div>
+								</div>
+								<div class="energy-levels-lines">
+									<div class="energy-levels-lines-s">s</div>
+									<div class="energy-levels-lines-p">p</div>
+									<div class="energy-levels-lines-d">d</div>
+									<div class="energy-levels-lines-f">f</div>
+									<div class="energy-levels-lines-orbitals">Орбитали</div>
+								</div>
+
+
+								<div class="elconf-goto-pro">
+									<div class="elconf-goto-pro-content">
+										<div class="elconf-goto-pro-left">
+											<i class="fa fa-lock"></i>
+										</div>
+										<div class="elconf-goto-pro-right">
+											<div ng-if="!config.isParentsDesc" class="goto-pro-block-content">
+												<div ui-sref="goto-pro" class="btn btn-primary goto-pro-bt">Перейти к Pro-версии</div>
+												<div ui-sref="goto-pro" class="more-about-pro-bt">Другие преимущества Pro-версии</div>
+											</div>
+											<div ng-if="config.isParentsDesc" class="goto-pro-block-content">
+												<div ui-sref="goto-pro-parents" class="btn btn-primary goto-pro-bt">Перейти к Pro-версии</div>
+												<div ui-sref="goto-pro-parents" class="more-about-pro-bt">Другие преимущества Pro-версии</div>
+											</div>					
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Электроотрицательность</p>
+					<p class="element-desc-list-value">
+						{{element['elnegativity']}}
+					</p>
+				</li>
+				<li class="list-group-item">
+					<p class="element-desc-list-name">Открыл</p>
+					<p class="element-desc-list-value">
+						{{element['discoverer'][lang]}}
+					</p>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</div>

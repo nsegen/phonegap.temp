@@ -1,0 +1,31 @@
+{
+	"element" : "Mg",
+	"name": {
+		"ru": "Магний",
+		"en": "Magnesium"
+	},
+	"group" : "2 A",
+	"period" : "3",
+	"atomMass" : "24.3050",
+	"elnegativity" : "1,23",
+	"elconf" : "1s2 2s2 2p6 3s2",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щёлочноземельные металлы",
+	"val" : ["2"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "shiny grey solid"
+	},
+	"tempMelting": "650 °C",
+	"tempBoiling": "1090 °C",
+	"discoverer": {
+		"ru": "Джозеф Блэк",
+		"en": "Joseph Black"
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"element" : "(Uut)",
+	"name": {
+		"ru": "Унунтрий",
+		"en": "Ununtrium"
+	},
+	"group" : "3 A",
+	"period" : "7",
+	"atomMass" : "[286]",
+	"elnegativity" : "",
+	"elconf" : "",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["0"],
+	"tempMelting": "430 °C",
+	"tempBoiling": "1130 °C",
+	"discoverer": {
+		"ru": "Ливерморская национальная лаборатория, Объединённый институт ядерных исследований",
+		"en": "Lawrence Livermore National Laboratory, Joint Institute for Nuclear Research"
+	}
+}

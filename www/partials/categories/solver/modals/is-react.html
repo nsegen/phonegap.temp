@@ -1,0 +1,31 @@
+<div class="modal solver-modal" ui-if='isReactModal' ui-state='isReactModal'>
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="isReactModal">&times;</button>
+        <h4 class="modal-title">Происходит ли реакция?</h4>
+      </div>
+      <div class="modal-body">
+        <!--
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"К раствору, содержащему 26,1 г нитрата бария, добавлен раствор, содержащий  35,5 г сульфата натрия, осадок отфильтрован. Что находится в фильтрате и в каком количестве?"</p>
+          <p class="solver-modal-reaction">Происходит ли реакция: <span class="label label-default">Да</span></p>
+        </div>
+        -->
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"В реакцию с соляной кислотой вступило 13 г цинка. Определите массы  израсходованной кислоты и полученной соли, а также объем выделившегося газа."</p>
+          <p class="solver-modal-reaction">Происходит ли реакция: <span class="label label-default">Да</span></p>
+        </div>
+        <div class="solver-modal-example">
+          <p class="solver-modal-condition">"Массовая доля железа в руде равна 75%, найдите массу руды, если химическое количество железа равняется 2 моль."</p>
+          <p class="solver-modal-reaction">Происходит ли реакция: <span class="label label-default label-no">Нет</span></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button ui-turn-off="isReactModal" class="btn btn-default">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div ui-content-for="left">
+  <div back class="btn back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+<div ui-content-for="right"></div>
+<div ui-content-for="title">
+  <div>Звонок от мамы</div> 
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break" ng-controller="ProtectCallController">
+
+      <div class="thumbnail" style="margin-top: 10px;">
+        <img src="./img/protect/payable/{{config.os}}/splash.jpg">
+        <div ng-show="unlockBtShow">
+          <div ng-if="!config.isParentsDesc" ui-sref="goto-pro" class="btn btn-primary btn-lg btn-block" role="button">
+            <i class="fa fa-unlock-alt"></i> Разблокировать
+          </div>
+          <div ng-if="config.isParentsDesc" ui-sref="goto-pro-parents" class="btn btn-primary btn-lg btn-block" role="button">
+            <i class="fa fa-unlock-alt"></i> Разблокировать
+          </div>
+        </div>
+        <div ng-click="checkCallProtection()" ng-show="checkBtShow" class="btn btn-primary btn-lg btn-block" role="button">
+          Выбрать <i class="fa fa-check"></i>
+        </div>
+        <div ng-show="checkedBtShow" class="btn btn-default btn-lg btn-block"  role="button">
+          <i class="fa fa-check"></i> Выбрано
+        </div>
+        <div style="padding:20px">
+          <p>
+            <p>Защита в виде часов в обычной версии не всегда может быть эффективна: некоторые учителя бывают весьма придирчивы, но даже они не смогут обвинить тебя в списывании, когда увидят на экране входящий вызов от мамы.</p>
+            <p>"Звонок от мамы" позволит тебе ещё и отпроситься с урока! Просто скажи, что это важный звонок от мамы и Вам обязательно нужно ответить, и когда доверчивый преподаватель разрешит покинуть кабинет, ты сможешь ещё и подсмотреть нужную информацию или решение задачи прямо в коридоре.</p>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

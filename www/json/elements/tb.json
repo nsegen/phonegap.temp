@@ -1,0 +1,30 @@
+{
+	"element" : "Tb",
+	"name": {
+		"ru": "Тербий",
+		"en": "Terbium"
+	},
+	"group" : "3 B",
+	"period" : "6",
+	"atomMass" : "158.925",
+	"elnegativity" : "1,10",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f9 5d0 6s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Лантаноиды",
+	"val" : ["3", "4"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1356 °C",
+	"tempBoiling": "3123 °C",
+	"discoverer": {
+		"ru": "Карл Густав Мосандер",
+		"en": "Carl Gustaf Mosander"
+	}
+}

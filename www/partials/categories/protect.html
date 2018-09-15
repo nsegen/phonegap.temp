@@ -1,0 +1,45 @@
+<div ui-content-for="title">
+    <span>Защита от учителя</span>
+</div>
+<div ui-content-for="left">
+  <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+    <i class="navbar-icon-menu"></i>
+  </div>
+</div>
+<div ui-content-for="right">
+  <div class="btn" ui-sref="protectGuide">
+    <i class="navbar-icon-question"></i>
+  </div>
+</div>
+
+<div class="protect-page">
+      <div
+        class="protect-pick-btn"
+        ng-style="{'background-image': 'url(\'./img/protect/default/' + config.os + '/splash.jpg\')', 'height': getBtnHeight(3) + 'px'}">
+        <div class="protect-bt-wrapper" style="padding-top: {{getBtnHeight(3) * 0.25}}px">
+          <div class="protect-name" translate>Часы</div>
+          <div ng-show="clockBtShow.checked" class="protect-consistion protect-consistion-checked" translate>Выбрано</div>
+          <div ng-show="clockBtShow.nochecked" class="protect-consistion protect-consistion-no-ckecked" translate>Не выбрано</div>
+          <div ui-sref="protectClock" class="btn btn-default" translate="">Подробнее</div>
+        </div>
+      </div>
+    <div
+      class="protect-pick-btn"
+      ng-style="{'background-image': 'url(\'./img/protect/default/' + config.os + '/splash.jpg\')', 'height': getBtnHeight(3) + 'px'}">
+      <div class="protect-bt-wrapper" style="padding-top: {{getBtnHeight(3) * 0.25}}px">
+          <div class="protect-name" translate>Звонок от мамы</div>
+          <div ng-show="callBtShow.checked" class="protect-consistion protect-consistion-checked" translate>Выбрано</div>
+          <div ng-show="callBtShow.nochecked" class="protect-consistion protect-consistion-no-ckecked" translate>Не выбрано</div>
+          <div ui-sref="protectCall" class="btn btn-default" translate>Подробнее</div>
+        </div>
+      </div>
+      <div
+        class="protect-pick-btn"
+        ng-style="{'background-image': 'url(\'./img/protect/default/' + config.os + '/splash.jpg\')', 'height': getBtnHeight(3) + 'px'}">
+      <div class="protect-bt-wrapper" style="padding-top: {{getBtnHeight(3) * 0.25}}px">
+          <div style="font-size: 16px; margin-top: 15px" class="protect-name" translate>Что такое защита от учителя<br> и как ей пользоваться?</div>
+          <div style="margin-top: 12px" ui-sref="protectGuide" class="btn btn-default" translate>Узнать</div>
+        </div>
+      </div>
+    </div>
+  </div>

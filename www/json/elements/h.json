@@ -1,0 +1,33 @@
+{
+	"element" : "H",
+	"name": {
+		"ru": "Водород",
+		"en": "Hydrogen"
+	},
+	"group" : "1 A",
+	"period" : "1",
+	"atomMass" : "1.00794",
+	"elnegativity" : "2,2",
+	"elconf" : "1s1",
+	"color" : "red",
+	"class" : "Неметаллы",
+	"val" : ["-1", "1"],
+
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+
+	"tempMelting": "-259,14 °C",
+	
+	"tempBoiling": "-252,87 °C",
+	
+	"discoverer": {
+		"ru": "Генри Кавендиш",
+		"en": "Henry Cavendish"
+	}
+}

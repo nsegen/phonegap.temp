@@ -1,0 +1,30 @@
+{
+	"element" : "Ne",
+	"name": {
+		"ru": "Неон",
+		"en": "Neon"
+	},
+	"group" : "8 A",
+	"period" : "2",
+	"atomMass" : "20.1797",
+	"elnegativity" : "4,84",
+	"elconf" : "1s2 2s2 2p6",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Инертные газы",
+	"val" : ["0"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированная",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "бесцветный",
+		"en": "colorless"
+	},
+	"tempMelting": "−248,6 °C",
+	"tempBoiling": "−246,05 °C",
+	"discoverer": {
+		"ru": "Уильям Рамзай, Моррис Траверс",
+		"en": "William Ramsay, Morris Travers"
+	}
+}

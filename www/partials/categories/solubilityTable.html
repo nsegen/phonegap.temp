@@ -1,0 +1,47 @@
+<div ui-content-for="title">
+  	<span>Таблица растворимости</span>
+</div>
+<div ui-content-for="left">
+  <div ui-sref="tables" class="btn sidebar-toggle back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+<div ui-content-for="right">
+  <div class="btn" ui-sref="solubilityTable.info">
+    <i class="navbar-icon-info"></i>
+  </div>
+</div>
+
+<div class="scrollable" ng-swipe-right='' ng-init="loadIons(); loadTable()">
+
+ 	<div id="anions" >
+ 		<div ng-repeat="ion in anions" ng-init="setSizeAnion($index)">
+ 			<substruction substruct="{{ion.name}}"></substruction>
+ 			<sup ng-bind="-1*ion.charge+'-'"></sup>
+ 		</div>
+ 	</div>
+
+	<div class="scrollable-content" id="table">
+	  	<div>
+	     	<div class="solubilityTable" ng-init="setMinWidthTableBlock()">
+	     		<div id="cations" ng-init="setMinWidthCationBlock()">
+		     		<div class="cation" ng-repeat="ion in cations" ng-init="setSizeCation($index)">
+		     			<substruction substruct="{{ion.name}}"></substruction>
+		     			<sup ng-bind="ion.charge+'+'"></sup>
+		     		</div>
+		     	</div>
+		     	<div class="stbl">
+		     		<div class="solubility-table-row" ng-repeat="row in solubilityTable track by $index" ng-init="setSizeRow($index); k=$index;">
+		     			<span class="elInSolubilityTable" ng-class="i=='-' ? 'minus' : i" ng-repeat="i in row track by $index" ng-bind="i" ng-init="setSizeElement(k, $index);">
+		     			</span>
+		     		</div>
+		     	</div>
+			</div>
+
+	  	</div>
+
+	</div>
+</div>
+
+<div ui-view>
+</div>

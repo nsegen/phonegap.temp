@@ -1,0 +1,31 @@
+{
+	"element" : "Li",
+	"name": {
+		"ru": "Литий",
+		"en": "Lithium"
+	},
+	"group" : "1 A",
+	"period" : "2",
+	"atomMass" : "6.941",
+	"elnegativity" : "0,97",
+	"elconf" : "1s2 2s1",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щелочные металлы",
+	"val" : ["1"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированая",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery-white"
+	},
+	"tempMelting": "180,54 °C",
+	"tempBoiling": "1339,85 °C",
+	"discoverer": {
+		"ru": "Йохан Август Арфведсон",
+		"en": "Johan August Arfwedson"
+	}
+
+}

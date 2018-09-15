@@ -1,0 +1,123 @@
+    <!-- Звонок на ios -->
+    <div ng-show="protect.blockShow.protect.ios" class="protect-block">
+      <div ng-show="protect.blockShow.callPage.ios">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="caller-name">Мама</div>
+            <div class="number-type">сотовый</div>
+          </div>
+        </div>
+        <div class="row icons-block">
+          <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="upper-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/ios/alarm.png">
+              <div>Напомнить</div>
+            </div>
+            <div class="decline-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/ios/decline.png">
+              <div>Отклонить</div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="upper-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/ios/message.png">
+              <div>Сообщение</div>
+            </div>
+            <div class="accept-bt" ng-click="protect.call.accept()">
+              <img src="./img/protect/payable/ios/accept.png">
+              <div>Ответить</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="protect-answer" ng-show="protect.blockShow.answer.ios">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="caller-name">Мама</div>
+            <div class="number-type">{{'00:0' + callTimer}}</div>
+          </div>
+        </div>
+        <div class="row icons-block">
+          <div class="col-md-12 col-xs-12 col-sm-12">
+            <img ng-click="protect.call.reject()" class="protect-icons-img" src="./img/protect/payable/ios/icons.png">
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="decline-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/ios/decline.png">
+              <div>Отклонить</div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+      <!-- пустой экран для ios, т.к. в Ios нет выхода из приложения -->
+      <div class="protect-ios-blank" ng-show="protect.blockShow.blank.ios">
+      </div>
+
+      <div ng-click="protect.hide()" class="protect-cancel-bt"></div>
+    </div>
+
+    <!-- Звонок на андройде -->
+    <div ng-show="protect.blockShow.protect.android" class="protect-block protect-android">
+      <div ng-show="protect.blockShow.callPage.android">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="protect-android-avatar" src="./img/protect/payable/android/avatar.png">
+            <div class="caller-name">Мама</div>
+            <div class="number-type">сотовый</div>
+          </div>
+        </div>
+        <div class="row icons-block">
+          <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="upper-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/ios/alarm.png">
+              <div>Напомнить</div>
+            </div>
+            <div class="decline-bt" ng-click="re()">
+              Отклонить
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="upper-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/ios/message.png">
+              <div>Сообщение</div>
+            </div>
+            <div class="accept-bt" ng-click="protect.call.accept()">
+              Ответить
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="protect-answer" ng-show="protect.blockShow.answer.android">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="caller-name">Мама</div>
+            <div class="number-type">{{'00:0' + callTimer}}</div>
+          </div>
+        </div>
+        <div class="row icons-block" style="margin-left:0; margin-right:0">
+          <div class="col-md-12 col-xs-12 col-sm-12">
+            <img ng-click="protect.call.reject()" class="protect-android-avatar" src="./img/protect/payable/android/avatar.png">
+          </div>
+          <div class="decline-bt-android-wrap">
+            <div class="decline-bt" ng-click="protect.call.reject()">
+              <img src="./img/protect/payable/android/decline.png">
+            </div>
+          </div>
+        </div>    
+      </div>
+
+      <div ng-click="protect.hide()" class="protect-cancel-bt"></div>
+
+    </div>
+
+
+    <!-- Часы -->
+    <div ng-show="protect.blockShow.protect.default" class="protect-block protect-default">
+      <canvas width="300" height="300" id="clock-protect"></canvas>
+      <div ng-click="protect.hide()" class="protect-cancel-bt"></div>
+    </div>

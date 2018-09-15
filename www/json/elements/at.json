@@ -1,0 +1,30 @@
+{
+	"element" : "At",
+	"name": {
+		"ru": "Астат",
+		"en": "Astatine"
+	},
+	"group" : "7 A",
+	"period" : "6",
+	"atomMass" : "[210]",
+	"elnegativity" : "1,96",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p5",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Галогены",
+	"val" : ["-1", "1", "5"],
+	"crystalStruct": {
+		"ru": "гранецентрированная кубическая атомная",
+		"en": "face-centered cubic"
+	},
+	"physColor": {
+		"ru": "чёрно-синий",
+		"en": "probably metallic"
+	},
+	"tempMelting": "302 °C",
+	"tempBoiling": "337 °C",
+	"discoverer": {
+		"ru": "Дэйл Корсон, Кеннет МакКензи, Эмилио Сегре",
+		"en": "Dale Corson, Kenneth MacKenzie, Emilio Segrè"
+	}
+}

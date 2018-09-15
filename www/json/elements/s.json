@@ -1,0 +1,30 @@
+{
+	"element" : "S",
+	"name": {
+		"ru": "Сера",
+		"en": "Sulfur"
+	},
+	"group" : "6 A",
+	"period" : "3",
+	"atomMass" : "32.065",
+	"elnegativity" : "2,44",
+	"elconf" : "1s2 2s2 2p6 3s2 3p4",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"val" : ["-2", "4", "6"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "orthorhombic"
+	},
+	"physColor": {
+		"ru": "светло-желтый",
+		"en": "lemon yellow"
+	},
+	"tempMelting": "112,85 °С",
+	"tempBoiling": "444,67 °С",
+	"discoverer": {
+		"ru": "Древние китайцы",
+		"en": "Chinese"
+	}
+
+}

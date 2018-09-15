@@ -1,0 +1,34 @@
+<div ui-content-for="title">
+  <span>Формулы</span>
+</div>
+<div ui-content-for="left">
+  <div back class="btn back-button">
+    <i class="navbar-icon-left"></i>
+  </div>
+</div>
+<div ui-content-for="right"></div>
+
+
+<div class="scrollable">  
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break formulas-page">
+      <div ng-repeat="x in formulas" ng-if="x.frmls" class="panel panel-default" style="margin-top: 10px;">
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          {{x.description}}
+          <span class="formula-header-measure"><span ng-bind-html="formatSymbol(x.symbol)"></span>, <span ng-bind-html="x.defaultMeasure.designation"></span></span>
+        </div>
+          <!-- List group -->
+        <ul class="list-group">
+          <!-- <li ng-repeat="formula in x['frmls']" ui-sref="{{formula.const ? ' ' : '.formulaLol({lvar: $parent.$index, rvar: $index})'}}" class="list-group-item"> -->
+          <li ng-repeat="formula in x['frmls']" class="list-group-item">
+            <formula class="formula" left="{{x.symbol}}" right="{{formula}}"/>
+          </li>
+        </ul>
+      </div>
+
+      <div ui-view></div>
+
+    </div>
+  </div>
+</div>

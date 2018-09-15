@@ -1,0 +1,30 @@
+{
+	"element" : "Bk",
+	"name": {
+		"ru": "Берклий",
+		"en": "Berkelium"
+	},
+	"group" : "3 B",
+	"period" : "7",
+	"atomMass" : "[247]",
+	"elnegativity" : "1,20",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f9 7s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Актиноиды",
+	"val" : ["2", "3", "4"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "double hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery"
+	},
+	"tempMelting": "986 °C",
+	"tempBoiling": "2627 °C",
+	"discoverer": {
+		"ru": "Национальная лаборатория им. Лоуренса в Беркли",
+		"en": "Lawrence Berkeley National Laboratory"
+	}
+}

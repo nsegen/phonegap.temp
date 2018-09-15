@@ -1,0 +1,35 @@
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="list-group left-sidebar">
+      <div class="sidebar-submenu1">
+        <a class="list-group-item" ng-click="gotoMenuSref('solvingTasks')"><span class="icon icon-brain"></span><span>Решатель задач</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('table')"><span class="icon icon-table"></span><span>Таблица Менделеева</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('solvingReactions')"><span class="icon icon-react"></span><span>Решатель реакций</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('solvingChains')"><span class="icon icon-chains"></span><span>Цепочки превращений</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('theory')"><span class="icon icon-book"></span>
+          <span ng-if="!config.isParentsDesc"><span>Шпоры и таблицы</span></span>
+          <span ng-if="config.isParentsDesc"><span>Теория</span></span>
+        </a>
+        <a class="list-group-item" ng-click="gotoMenuSref('alignmentCoefficients')"><span class="icon icon-coef"></span><span>Расстановка коэффициентов</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('molarMass')"><span class="icon icon-molar"></span><span>Найти молярную массу</span></a>
+      </div>
+
+      <div class="sidebar-submenu" ng-if="!config.isParentsDesc">
+        <div class="list-group-item protect-bt">
+          <a ng-click="gotoMenuSref('protect')">
+            <span class="icon icon-skull"></span> Защита от учителя
+          </a>
+          <ui-switch ng-model="protect.mode" ng-change="protect.saveMode()" class="protect-switch"></ui-switch>
+        </div>
+      </div>
+      
+      <div class="sidebar-submenu2">
+        <a ng-if="!config.isPurchased && !config.isParentsDesc" class="list-group-item" id="goto-pro-menu-bt" ng-click="gotoMenuSref('goto-pro')"><span class="icon icon-lightning"></span><span>Перейти на pro-версию</span></a>
+        <a ng-if="!config.isPurchased && config.isParentsDesc" class="list-group-item" id="goto-pro-menu-bt" ng-click="gotoMenuSref('goto-pro-parents')"><span class="icon icon-lightning"></span><span>Перейти на pro-версию</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('guides')"><span class="icon icon-book2"></span><span>Как пользоваться</span></a>
+        <a class="list-group-item" ng-click="gotoMenuSref('settings')"><span class="icon icon-pencil"></span><span>Настройки</span></a>
+      </div>
+
+    </div>
+  </div>
+</div>

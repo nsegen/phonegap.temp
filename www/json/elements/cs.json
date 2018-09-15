@@ -1,0 +1,30 @@
+{
+	"element" : "Cs",
+	"name": {
+		"ru": "Цезий",
+		"en": "Cesium"
+	},
+	"group" : "1 A",
+	"period" : "6",
+	"atomMass" : "132.905",
+	"elnegativity" : "0,86",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 6s1",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щелочные металлы",
+	"val" : ["1"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированная",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-жёлтый",
+		"en": "silvery gold"
+	},
+	"tempMelting": "28.5 °C",
+	"tempBoiling": "671 °C",
+	"discoverer": {
+		"ru": "Роберт Бунзен, Густав Кирхгоф",
+		"en": "Robert Bunsen, Gustav Kirchhoff"
+	}
+}

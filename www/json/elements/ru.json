@@ -1,0 +1,30 @@
+{
+	"element" : "Ru",
+	"name": {
+		"ru": "Рутений",
+		"en": "Ruthenium"
+	},
+	"group" : "8 B",
+	"period" : "5",
+	"atomMass" : "101.07",
+	"elnegativity" : "1,42",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d7 5s1",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2", "3", "4", "5", "6", "7", "8"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "2334 °C",
+	"tempBoiling": "4077 °C",
+	"discoverer": {
+		"ru": "Карл Карлович Клаус",
+		"en": "Karl Ernst Claus"
+	}
+}

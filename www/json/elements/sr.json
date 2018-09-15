@@ -1,0 +1,30 @@
+{
+	"element" : "Sr",
+	"name": {
+		"ru": "Стронций",
+		"en": "Strontium"
+	},
+	"group" : "2 A",
+	"period" : "5",
+	"atomMass" : "87.62",
+	"elnegativity" : "0,99",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щёлочноземельные металлы",
+	"val" : ["2"],
+	"crystalStruct": {
+		"ru": "кубическая гранецентрированая",
+		"en": "​face-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "grey white"
+	},
+	"tempMelting": "777 °C",
+	"tempBoiling": "1377 °C",
+	"discoverer": {
+		"ru": "Адер Крофорд, Мартин Клапрот",
+		"en": "Adair Crawford, Martin Klaproth"
+	}
+}

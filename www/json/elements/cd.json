@@ -1,0 +1,30 @@
+{
+	"element" : "Cd",
+	"name": {
+		"ru": "Кадмий",
+		"en": "Cadmium"
+	},
+	"group" : "2 B",
+	"period" : "5",
+	"atomMass" : "112.411",
+	"elnegativity" : "1,46",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2",
+	"color" : "blue",
+	"class" : "Металлы",
+	"subclass" : "Переходные металлы",
+	"val" : ["2"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-серый ",
+		"en": "silvery bluish-gray"
+	},
+	"tempMelting": "321.07 °C",
+	"tempBoiling": "767 °C",
+	"discoverer": {
+		"ru": "Фридрих Штромейер",
+		"en": "Friedrich Stromeyer"
+	}
+}

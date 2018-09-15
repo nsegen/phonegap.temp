@@ -1,0 +1,30 @@
+{
+	"element" : "Np",
+	"name": {
+		"ru": "Нептуний",
+		"en": "Neptunium"
+	},
+	"group" : "3 B",
+	"period" : "7",
+	"atomMass" : "[237]",
+	"elnegativity" : "1,22",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f14 5d10 6s2 6p6 5f4 6d1 7s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Актиноиды",
+	"val" : ["3", "4", "5", "6", "7"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "​orthorhombic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery metallic"
+	},
+	"tempMelting": "639±3 °C",
+	"tempBoiling": "4174 °C",
+	"discoverer": {
+		"ru": "Эдвин Макмиллан, Филипп Абельсон",
+		"en": "Edwin McMillan, Philip Abelson"
+	}
+}

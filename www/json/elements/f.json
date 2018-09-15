@@ -1,0 +1,31 @@
+{
+	"element" : "F",
+	"name": {
+		"ru": "Фтор",
+		"en": "Fluorine"
+	},
+	"group" : "7 A",
+	"period" : "2",
+	"atomMass" : "18.9984",
+	"elnegativity" : "4,10",
+	"elconf" : "1s2 2s2 2p5",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Галогены",
+	"val" : ["-1"],
+	"crystalStruct": {
+		"ru": "моноклинная",
+		"en": "cubic"
+	},
+	"physColor": {
+		"ru": "бледно-жёлтый",
+		"en": "gas: very pale yellow, liquid: bright yellow, solid: alpha is opaque"
+	},
+	"tempMelting": "−219.67 °C",
+	"tempBoiling": "−188.11 °C",
+	"discoverer": {
+		"ru": "Андрэ-Мари Ампер",
+		"en": "André-Marie Ampère"
+	}
+
+}

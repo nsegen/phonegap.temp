@@ -1,0 +1,30 @@
+{
+	"element" : "Ho",
+	"name": {
+		"ru": "Гольмий",
+		"en": "Holmium"
+	},
+	"group" : "3 B",
+	"period" : "6",
+	"atomMass" : "164.930",
+	"elnegativity" : "1,10",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f11 5d0 6s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Лантаноиды",
+	"val" : ["3"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1461 °C",
+	"tempBoiling": "2600 °C",
+	"discoverer": {
+		"ru": "Пер Теодор Клеве",
+		"en": "Per Teodor Cleve"
+	}
+}

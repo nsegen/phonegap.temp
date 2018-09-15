@@ -1,0 +1,31 @@
+{
+	"element" : "Cl",
+	"name": {
+		"ru": "Хлор",
+		"en": "Chlorine"
+	},
+	"group" : "7 A",
+	"period" : "3",
+	"atomMass" : "35.453",
+	"elnegativity" : "2,83",
+	"elconf" : "1s2 2s2 2p6 3s2 3p5",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Галогены",
+	"val" : ["-1", "1", "3", "5", "7"],
+	"crystalStruct": {
+		"ru": "орторомбическая",
+		"en": "orthorhombic"
+	},
+	"physColor": {
+		"ru": "желтовато-зелёный",
+		"en": "yellow-green"
+	},
+	"tempMelting": "−101.5 °C",
+	"tempBoiling": "−34.04 °C",
+	"discoverer": {
+		"ru": "Карл Вильгельм Шееле",
+		"en": "Carl Wilhelm Scheele"
+	}
+
+}

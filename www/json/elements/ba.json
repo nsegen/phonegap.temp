@@ -1,0 +1,30 @@
+{
+	"element" : "Ba",
+	"name": {
+		"ru": "Барий",
+		"en": "Barium"
+	},
+	"group" : "2 A",
+	"period" : "6",
+	"atomMass" : "137.327",
+	"elnegativity" : "0,97",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 6s2",
+	"color" : "red",
+	"class" : "Металлы",
+	"subclass" : "Щёлочноземельные металлы",
+	"val" : ["2"],
+	"crystalStruct": {
+		"ru": "кубическая объёмноцентрированная",
+		"en": "body-centered cubic"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery gray"
+	},
+	"tempMelting": "727 °C",
+	"tempBoiling": "1845 °C",
+	"discoverer": {
+		"ru": "Карл Вильгельм Шееле",
+		"en": "Carl Wilhelm Scheele"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"element" : "Fl",
+	"name": {
+		"ru": "Флеровий",
+		"en": "Flerovium"
+	},
+	"group" : "4 A",
+	"period" : "7",
+	"atomMass" : "[289]",
+	"elnegativity" : "",
+	"elconf" : "",
+	"color" : "yellow",
+	"class" : "Металлы",
+	"subclass" : "Полупроводники",
+	"val" : ["0"],
+	"tempMelting": "67 °C",
+	"tempBoiling": "147 °C",
+	"discoverer": {
+		"ru": "Ливерморская национальная лаборатория, Объединённый институт ядерных исследований",
+		"en": "Lawrence Livermore National Laboratory, Joint Institute for Nuclear Research"
+	}
+}

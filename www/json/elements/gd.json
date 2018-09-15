@@ -1,0 +1,30 @@
+{
+	"element" : "Gd",
+	"name": {
+		"ru": "Гадолиний",
+		"en": "Gadolinium"
+	},
+	"group" : "3 B",
+	"period" : "6",
+	"atomMass" : "157.25",
+	"elnegativity" : "1,11",
+	"elconf" : "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 4d10 5s2 5p6 4f7 5d1 6s2",
+	"color" : "green",
+	"class" : "Металлы",
+	"subclass" : "Лантаноиды",
+	"val" : ["3"],
+	"crystalStruct": {
+		"ru": "гексагональная",
+		"en": "hexagonal close-packed"
+	},
+	"physColor": {
+		"ru": "серебристо-белый",
+		"en": "silvery white"
+	},
+	"tempMelting": "1312 °C",
+	"tempBoiling": "3000 °C",
+	"discoverer": {
+		"ru": "Поль Эмиль Лекок де Буабодран",
+		"en": "Paul Emile Lecoq de Boisbaudran"
+	}
+}

@@ -1,0 +1,112 @@
+<div ng-include="'./partials/other/navbars/nav-menu-only.html'"></div>
+<div ui-content-for="title">
+  <div>Pro-версия</div> 
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="goto-pro-header">
+      <img src="./img/goto-pro-header.jpg">
+      <div class="btn btn-default">
+        <span class="icon icon-lightning"></span> 
+        Купить за {{config.price}}
+      </div>
+    </div>
+    <div class="list-group goto-pro-list">
+      <div class="list-group-item pre-text">
+        Впереди экзамен или ЕГЭ, а уровень Вашей подготовки оставляет желать лучшего? Родители сразу постараются найти Вам репетитора или купить кучу толстых учебников, но совсем ни к чему тратить огромные деньги. Всего за {{config.price}} вы сможете разблокировать Pro-версию с множеством функций, которые научат Вас решать любые химические задачи и подтянут уровень знания предмета с обычного до отличного! С Pro-версией приложения Вы перестанете переживать из-за грядущих экзаменов, всё самое необходимое для подготовки будет прямо у Вас в смартфоне и всегда под рукой, а именно:
+      </div>
+    	<div class="list-group-item" ui-turn-on="solverModal">
+    		<div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-brain"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Объяснение решения задач</h4>
+            <p>с комментариями и пояснениями для лучшего усвоения</p>
+          </div>
+        </div>
+    	</div>
+    	<!--
+      <div class="list-group-item" ui-turn-on="adsModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-cry"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Отключение рекламы</h4>
+            <p>реклама больше не будет отвлекать вас от занятий химией</p>
+          </div>
+        </div>
+      </div>
+      -->
+      <div class="list-group-item" ui-turn-on="reactModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-react"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Помощь в решении цепочек реакций</h4>
+            <p>умный поиск реакций с условиями их протекания</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item" ui-turn-on="balanceModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-scales"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Метод электронного баланса</h4>
+            <p>интерактивный метод электронного баланса для уравнения реакции</p>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="list-group-item" ui-turn-on="formulasModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-calc"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Калькуляторы формул</h4>
+            <p>помощь с проверкой ваших расчетов химическими калькуляторами</p>
+          </div>
+        </div>
+      </div>
+      -->
+      <div class="list-group-item" ui-turn-on="elconfModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-table"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Графическая электронная конфигурация</h4>
+            <p>электронная конфигурация для каждого элемента таблицы Менделеева</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item" ui-turn-on="molarModal">
+        <div class="row">
+          <div class="col-sm-3 col-xs-3 col-md-2 icon-block">
+            <span class="icon icon-molar"></span>
+          </div>
+          <div class="col-sm-9 col-xs-9 col-md-10">
+            <h4>Как найти молярную массу</h4>
+            <p>приложение понятно объяснит, как найти молярную массу любого вещества</p>
+          </div>
+        </div>
+      </div>    	
+    </div>
+  </div>
+</div>
+
+<div ui-content-for="modals">
+  <div ng-include="'./partials/categories/goto-pro-parents/solver-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro-parents/ads-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro-parents/react-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro-parents/balance-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro-parents/formulas-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro-parents/elconf-modal.html'"></div>
+  <div ng-include="'./partials/categories/goto-pro-parents/molar-modal.html'"></div>
+</div>

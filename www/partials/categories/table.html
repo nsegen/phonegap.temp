@@ -1,0 +1,68 @@
+<div ui-content-for="title">
+  	<span>Таблица Менделеева</span>
+</div>
+<div ui-content-for="left">
+  <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+    <i class="navbar-icon-menu"></i>
+  </div>
+</div>
+<div ui-content-for="right">
+  <div class="btn" ui-sref="table.tableInfo">
+    <i class="navbar-icon-info"></i>
+  </div>
+</div>
+
+<div class="scrollable" ng-swipe-right='' ng-swipe-left=''>
+
+ 	<div id="periods">
+ 		<div ng-repeat="i in period track by $index" ng-init="setSizePeriod($index)" ng-bind="i"></div>
+ 	</div>
+
+	<div class="scrollable-content" id="table">
+	  	<div>
+	     	<div class="table" ng-init="setMinWidthTableBlock()">
+	     		<div id="groups" ng-init="setMinWidthGroupBlock()">
+		     		<div ng-repeat="i in group track by $index" class="elInTable" ng-init="setSizeGroup($index)" ng-bind="i"></div>
+		     	</div>
+
+		     	<div class="tbl">
+		     		<div ng-repeat="row in table track by $index" class="periodic-table-row" ng-init="setSizeRow($index);">
+		     			<a ng-click="showDescription(el)" ng-repeat="el in row track by $index" class="{{'elementContent elInTable ' + el['class'] + ' ' + el['subclass']}}" ng-class="{empty: el['element'] == 'empty', lanactin: el['element'][2] == '-'}" ng-init="setSizeElement()">
+		     				
+		     					<div class="table-element-number" ng-class="{empty: el['element'][2] == '-'}" ng-bind="el['id']"></div>
+		     					<div class="table-element-symbol" ng-bind="el['element']"></div>
+		     					<div class="table-element-name" ng-class="{empty: el['element'][2] == '-'}" ng-bind="el['name'][lang]"></div>
+		     					<div class="table-element-mass" ng-class="{empty: el['element'][2] == '-'}" ng-bind="el['atomMass']"></div>
+		     				
+		     			</a>
+		     		</div>
+		     	</div>
+	     		<div ng-show="showLantinoids" class="lantanoids-row">
+		     		<span class="ac-la-star" ng-click="showLantinoids=false;">
+		     			<i class="navbar-icon-close"></i>
+		     		</span>
+		     		<a ng-click="showDescription(el)" ng-repeat="el in lanthanides track by $index" class="elInTable elementContent Лантаноиды">
+	     				<div class="table-element-number" ng-bind="e['id']"></div>
+	     				<div class="table-element-symbol" ng-bind="el['element']"></div>
+	     				<div class="table-element-name" ng-bind="el['name'][lang]"></div>
+	     				<div class="table-element-mass" ng-bind="el['atomMass']"></div>
+		     		</a>
+		     	</div>
+		     	<div ng-show="showActinoids" class="actinoids-row">
+					<span class="ac-la-star" ng-click="showActinoids = false;">
+						<i class="navbar-icon-close"></i>
+					</span>
+		     		<a ng-click="showDescription(el)" ng-repeat="el in actinides" class="elInTable elementContent Актиноиды">
+	     				<div class="table-element-number" ng-bind="e['id']"></div>
+	     				<div class="table-element-symbol" ng-bind="el['element']"></div>
+	     				<div class="table-element-name" ng-bind="el['name'][lang]"></div>
+	     				<div class="table-element-mass" ng-bind="el['atomMass']"></div>
+		     		</a>
+		     	</div>
+			</div>
+
+	  	</div>
+
+	  	<div ui-view>
+	  	</div>
+</div>

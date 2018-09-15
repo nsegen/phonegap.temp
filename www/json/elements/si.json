@@ -1,0 +1,31 @@
+{
+	"element" : "Si",
+	"name": {
+		"ru": "Кремний",
+		"en": "Silicon"
+	},
+	"group" : "4 A",
+	"period" : "3",
+	"atomMass" : "28.0855",
+	"elnegativity" : "1,74",
+	"elconf" : "1s2 2s2 2p6 3s2 3p2",
+	"color" : "yellow",
+	"class" : "Неметаллы",
+	"subclass" : "Полуметаллы",
+	"val" : ["-4", "2", "4"],
+	"crystalStruct": {
+		"ru": "кубическая, алмазная",
+		"en": "diamond cubic"
+	},
+	"physColor": {
+		"ru": "коричневый или тёмно-серый",
+		"en": "crystalline, reflective with bluish-tinged faces"
+	},
+	"tempMelting": "1414 °C",
+	"tempBoiling": "3265 °C",
+	"discoverer": {
+		"ru": "Йёнс Якоб Берцелиус",
+		"en": "Jöns Jakob Berzelius"
+	}
+
+}

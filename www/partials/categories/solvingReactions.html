@@ -1,0 +1,79 @@
+<div ui-content-for="title">
+  <span>Решение реакций</span>
+</div>
+<div ui-content-for="left">
+  <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+    <i class="navbar-icon-menu"></i>
+  </div>
+</div>
+<div ui-content-for="right">
+  <div class="btn" ui-sref="reactionsGuide">
+    <i class="navbar-icon-question"></i>
+  </div>
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+  <div class="reactions-searchbar">
+		<div class="input-group reactions-search">
+	      <input id="reaction-input" ng-model="react" type="text" class="form-control" placeholder="{{'Например: ' + defaultReaction}}">
+	      <span class="input-group-btn">
+	        <button ng-click="searchReaction(react)" class="btn btn-primary" type="button"><i class="fa fa-search"></i> Найти</button>
+	      </span>
+	    </div>
+	</div>
+    <div class="container-fluid section section-break">
+	    <div ng-show="reactionsExamplesShow" class="reactions-examples">
+		    <div class="reactions-examples-field">
+		    	<span class="reactions-more-text">Другие примеры:</span>
+		    	<span ng-repeat="example in examples">
+		    		<span ng-click="searchReaction(example)" class="reactions-example label label-default">{{example}}</span>
+		    	</span>
+		    </div>
+		    <div ng-hide="reactionsMoreBtHide" class="reactions-more-btn"><span ng-click="addExamples('reactions', 3)">Ещё</span></div>
+		</div>
+
+		<div ng-show="reactionsSearchFieldShow" class="reactions-search-field">
+			<i class="fa fa-spinner fa-spin"></i>
+		</div>
+
+		<div ng-show="reactionsErrorShow" class="reactions-error-field alert alert-danger" role="alert">
+			{{error}}
+		</div>
+
+		<div ng-show="reactionsCaptchaShow" class="reactions-captcha-field">
+			<img src="{{'http://nigma.ru/captcha.php?key=' + captcha.data.key}}">
+			<input placeholder="Код с картинки..." class="form-control" id="captcha-text" name="captcha" type="text">
+			<div ng-click="sendCaptcha()" class="btn btn-primary">Отправить</div>
+		
+		</div>
+
+		<div ng-show="reactionsList" class="reactions-list" ng-controller="AccordionController">
+			<div class="panel-group">
+		        <div class="panel panel-default" ng-repeat="x in reactions">
+		          <div class="panel-heading" id="{{'anchor_panel-' + reactions.indexOf(x)}}" ng-click="togglePanel(reactions.indexOf(x))">
+		            <h4 class="panel-title" ng-bind-html="x.reaction"></h4>
+		          </div>
+		          <div>
+		            <div class="panel-body" style="display: none">
+		              <div class="reaction-condition" ng-if="lang != 'en' && x.condition != '' && x.condition != 'none'" ng-bind-html="x.condition"></div>
+
+		              <div class="reaction-ion" ng-if="x.ion != '' && x.ion != undefined && x.ion != 'none'">
+		              	<strong>Окислительно-восстановительная реакция:</strong>
+		              	<div ng-bind-html="x.ion"></div>
+		              </div>
+
+		              <div class="reaction-noreact" ng-if="x.no_react != 'none' && x.no_react != undefined" ng-bind-html="x.no_react.head"></div>
+		              	
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+			</div>
+    	</div>
+  </div>
+</div>
+
+<div ui-content-for="modals">
+  <div ng-include="'./partials/categories/reactions/react-modal.html'"></div>
+</div>

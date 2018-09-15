@@ -1,0 +1,71 @@
+<div ng-include="'./partials/other/navbars/nav-menu-only.html'"></div>
+
+<div ui-content-for="title">
+  <div>Руководство</div> 
+</div>
+
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="container-fluid section section-break guides-page">
+
+        <div class="row" style="margin-top:-10px">
+            <div ui-sref="solverGuide" class="guide-header col-md-12" style="background-image:url('./img/guides/problems.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name">
+                        <span class="icon icon-brain"></span> Решатель задач
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div ng-if="!config.isParentsDesc" ui-sref="protectGuide" class="guide-header col-md-12" style="background-image:url('./img/protect/teacher.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name">
+                        <span class="icon icon-skull"></span> Защита от учителя
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div ui-sref="reactionsGuide" class="guide-header col-md-12" style="background-image:url('./img/guides/react.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name">
+                        <span class="icon icon-react"></span> Решение реакций
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div ui-sref="chainsGuide" class="guide-header col-md-12" style="background-image:url('./img/guides/chains.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name">
+                        <span class="icon icon-chains"></span> Цепочки превращений
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div ui-sref="coefGuide" class="guide-header col-md-12" style="background-image:url('./img/guides/coef.jpg')">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name">
+                        <span class="icon icon-coef"></span> Расстановка коэффициентов
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div ui-sref="molarGuide" class="guide-header col-md-12" style="background-image:url('./img/guides/molar.jpg'); margin-bottom: -30px;">
+              <div class="guide-header-wrapper">
+                <div class="guide-text-wrapper">
+                    <div class="guide-name">
+                        <span class="icon icon-molar"></span> Молярные массы
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</div>
