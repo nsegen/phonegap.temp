@@ -40,9 +40,6 @@
     </gap:config-file>
     <access origin="http://chemistryx10.com*" />
     <access origin="http://ract.chemistryx10.com*" />
-    <access origin="http://nigma.ru/*" />
-    <access origin="http://pda.nigma.ru/*" />
-    <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
