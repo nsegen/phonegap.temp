@@ -12,7 +12,13 @@
 	display: inline-block;
 }
 
-.elInTable,
+.elInTable {
+	display: inline-block;
+	height: 100%;
+	width: 5.55555%;
+	position: relative;
+	padding: 3px;
+}
 .group{
 	display: inline-block;
 	height: 55px;
@@ -59,7 +65,7 @@
 }
 
 .periodic-table-row {
-	/*height: 55px;*/
+	height: 14.2857%;
 }
 
 .elementContent:hover,
@@ -68,19 +74,16 @@
 	text-decoration: none;
 }
 
-.table{
-	min-width: 1050px;
-	position: relative;
-}
-
 #groups{
-	margin-top: 25px;
-    width: 100%;
+	width: 100%;
     line-height: 20px;
     height: 25px;
     background: rgb(31, 34, 49);
     color: #71768b;
     z-index: 9999;
+	position: absolute;
+	top: 0;
+	margin-left: 25px;
 }
 
 #groups .elInTable {
@@ -93,35 +96,61 @@
 	background: transparent !important;
 }
 
+.table-child {
+	display: inline-block;
+}
 
 #periods{
-	position: absolute;
-	top: 15px;
+	position: sticky;
+	height: 100%;
 	width: 25px;
 	left: 0;
 	text-align: center;
-    background: rgba(28, 31, 43, 0.95);
-    color: #7b8096;
+	background: rgba(28, 31, 43, 0.95);
+	color: #7b8096;
 	z-index: 9998;
-	padding-top: 30px;
 }
 
 #periods div {
-	/*height: 55px;*/
-    vertical-align: middle;
-    /*line-height: 55px;*/
+	padding-top: 100%;
+	height: 14.2857%;
+	vertical-align: middle;
+	line-height: 14.2857%;
 }
 
 
 .table {
-	margin-top: -25px;
 	margin-bottom: 0;
-	margin-left: 25px;
+	min-width: 1050px;
+	height: 100%;
+	padding-top: 25px;
+	position: relative;
+}
+
+.table-elements {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.actinoids-list,
+.lantanoids-list {
+	height: 50%;
 }
 
 .actinoids-row,
 .lantanoids-row {
 	position: absolute;
+	left: 8.9%;
+	height: 27%;
+}
+
+.actinoids-row {
+	top: 76.5%;
+}
+
+.lantanoids-row {
+	top: 63%;
 }
 
 .table-element-number {
@@ -160,19 +189,10 @@
 	font-size: 25px;
 }
 
-.lantanoids-row {
-    margin-left: 110px;
-    margin-top: 0px;
-}
-
-.actinoids-row {
-    margin-left: 110px;
-    margin-top: 5px;	
-}
-
-
 .tbl {
-  width: 100%;
+  	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .Неметаллы {
@@ -227,6 +247,11 @@
 	background: #edc85f;
 	border-right: 1px solid #DEBC5A;
     border-bottom: 1px solid #DEBC5A;
+}
+
+.Лантаноиды,
+.Актиноиды {
+	width: 6.666666%;
 }
 
 .Лантаноиды,
