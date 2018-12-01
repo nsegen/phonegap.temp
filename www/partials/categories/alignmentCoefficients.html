@@ -62,8 +62,10 @@
                             <div ng-bind="abs(balance[1].razn*balance[0].razn/nod(balance[1].razn,balance[0].razn))/abs(balance[1].razn)"></div>
                         </div>
                         <div>
-                            <div ng-bind="balance[0].process"></div>
-                            <div ng-bind="balance[1].process"></div>
+                            <div ng-repeat="x in balance track by $index">
+                                <div ng-if="x.razn > 0" translate>Окислитель, процесс восстановления</div>
+                                <div ng-if="x.razn < 0" translate>Восстановитель, процесс окисления</div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -45,16 +45,16 @@
 			<img src="{{'http://nigma.ru/captcha.php?key=' + captcha.data.key}}">
 			<input placeholder="Код с картинки..." class="form-control" id="captcha-text" name="captcha" type="text">
 			<div ng-click="sendCaptcha()" class="btn btn-primary">Отправить</div>
-		
+
 		</div>
 
 		<div ng-show="reactionsList" class="reactions-list" ng-controller="AccordionController">
 			<div class="panel-group">
-		        <div class="panel panel-default" ng-repeat="x in reactions">
-		          <div class="panel-heading" id="{{'anchor_panel-' + reactions.indexOf(x)}}" ng-click="togglePanel(reactions.indexOf(x))">
+		        <div class="panel panel-default" ng-repeat="x in reactions track by $index">
+		          <div class="panel-heading" id="{{'anchor_panel-' + $index}}" ng-click="togglePanel($index)">
 		            <h4 class="panel-title" ng-bind-html="x.reaction"></h4>
 		          </div>
-		          <div>
+		          <div ng-if="x.condition || x.ion">
 		            <div class="panel-body" style="display: none">
 		              <div class="reaction-condition" ng-if="lang != 'en' && x.condition != '' && x.condition != 'none'" ng-bind-html="x.condition"></div>
 
@@ -64,7 +64,7 @@
 		              </div>
 
 		              <div class="reaction-noreact" ng-if="x.no_react != 'none' && x.no_react != undefined" ng-bind-html="x.no_react.head"></div>
-		              	
+
 		              </div>
 		            </div>
 		          </div>
