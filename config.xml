@@ -52,4 +52,5 @@
         <allow-intent href="market:*" />
     </platform>
     <engine name="android" spec="^5.1.1" />
+    <uses-permission android:name="com.android.vending.BILLING" />
 </widget>
